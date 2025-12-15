@@ -5,6 +5,13 @@
   <h1 align="center">Tkinter-Toolkit</h1>
 </div>
 
+<div>
+<i>Read this in other languages:</i>
+
+<kbd>[<img title="Turkish" alt="Turkish" src="https://cdn.statically.io/gh/hjnilsson/country-flags/master/svg/tr.svg" width="22">](docs/translations/README.tr.md)</kbd>
+<br>
+</div>
+
 Tkinter is a great library for UI development in python. Specially the canvas widget of tkinter lets you make any custom widget you want. If you are planning to create a new piece of software or want to implement a GUI for your python scripts, then tkinter is still one of the best options out there. Moreover, after the arrival of [**`customtkinter`**](https://github.com/TomSchimansky/CustomTkinter), it is super easy to create a modern user-friendly UI. The community is also very kind and helpful. Also note that both customtkinter and tkinter libraries can be used together in one project.
 
 
@@ -26,7 +33,8 @@ Tkinter is a great library for UI development in python. Specially the canvas wi
 - Detailed descriptions provided
 - Update database and view new packages if available
 - Share your own tkinter libraries
-  
+- (New) Additional language options
+
 ## Screenshots
 ![Screenshot1](https://github.com/Akascape/tkinter-toolkit/assets/89206401/fa4c6fbd-707d-468e-9f85-6c7b8ab15ceb)
 ![Screenshot2](https://github.com/Akascape/tkinter-toolkit/assets/89206401/1884b4da-37c5-4b2c-ade4-4dd8b9012fa5)
