@@ -57,22 +57,25 @@ class App(customtkinter.CTk):
             self.font = customtkinter.ThemeManager.theme["CTkFont"]["family"]
             
         self.label = customtkinter.CTkLabel(master=self.frame, text="Tkinter Toolkit", font=(self.font,25,"bold"))
-        self.label.grid(row=0, column=0, padx=20, pady=10)
+        self.label.grid(row=0, column=0, padx=10, pady=10)
 
         self.entry = customtkinter.CTkEntry(master=self.frame, placeholder_text="search", width=200)
-        self.entry.grid(row=0, column=1, pady=10, sticky="e")
+        self.entry.grid(row=0, column=1, padx=5, pady=10, sticky="e")
         self.entry.bind("<KeyRelease>", lambda e: self.search_package(self.entry.get()))
-        
+
+        self.lang_button = customtkinter.CTkButton(master=self.frame, text="🌐", hover=False, width=30, command=self.open_language_window)
+        self.lang_button.grid(row=0, column=2, padx=5, pady=10, sticky="e")
+
         self.about_button = customtkinter.CTkButton(master=self.frame, text="i", hover=False, width=30, command=self.open_about_window)
-        self.about_button.grid(row=0, column=2, padx=10, pady=10, sticky="e")
+        self.about_button.grid(row=0, column=3, padx=5, pady=10, sticky="e")
         
         self.option_type = customtkinter.CTkSegmentedButton(self.frame, values=["All","pip", "manual"], selected_color=["grey40","grey10"],
                                                             selected_hover_color=["grey38","grey12"], height=30, command=self.filter_packages)
         self.option_type.set("All")
-        self.option_type.grid(row=1, column=0, columnspan=3, padx=10, pady=10, sticky="ew")
+        self.option_type.grid(row=1, column=0, columnspan=4, padx=10, pady=10, sticky="ew")
 
         self.scrollable_frame = customtkinter.CTkScrollableFrame(self.frame)
-        self.scrollable_frame.grid(row=2, column=0, columnspan=3, padx=10, pady=(0,10), sticky="nsew")
+        self.scrollable_frame.grid(row=2, column=0, columnspan=4, padx=10, pady=(0,10), sticky="nsew")
         
         self.ctkimage = customtkinter.CTkImage(Image.open(os.path.join(os.path.dirname(customtkinter.__file__),"assets","icons","CustomTkinter_icon_Windows.ico")))
         self.tkimage = customtkinter.CTkImage(Image.open(os.path.join(App.DIRPATH, "assets", "tk.png")))
@@ -206,6 +209,37 @@ class App(customtkinter.CTk):
         update_label.pack()
         self.about_button.configure(state="disabled")
 
+    def open_language_window(self):
+        """ open about window """
+        def close_toplevel():
+            lang_window.destroy()
+            self.lang_button.configure(state="normal")
+            
+
+        lang_window = customtkinter.CTkToplevel(self)
+        lang_window.title("Language selection")
+        lang_window.transient(self)
+
+        spawn_x = int(self.winfo_width() * .5 + self.winfo_x() - .5 * 450 + 7)
+        spawn_y = int(self.winfo_height() * .5 + self.winfo_y() - .5 * 275 + 20)
+ 
+        lang_window.geometry(f"450x275+{spawn_x}+{spawn_y}")
+        lang_window.resizable(False, False)
+        lang_window.protocol("WM_DELETE_WINDOW", close_toplevel)
+        lang_window.wm_iconbitmap()
+        lang_window.after(300, lambda: lang_window.iconphoto(False, self.iconpath))
+
+        label_title = customtkinter.CTkLabel(lang_window, text="Choose a language", font=(self.font,17,"bold"))
+        label_title.pack(fill="x", padx=10, pady=15)
+
+        lang_option_menu = customtkinter.CTkOptionMenu(lang_window, width=430)
+        lang_option_menu.pack(fill="x", padx=10, pady=10)
+
+        # CTkScrollableDropdown(lang_option_menu, values=values)
+        # Language_selection = customtkinter.CTkButton(lang_window, text="Update Database", command=update_database)
+
+        self.lang_button.configure(state="disabled")
+
     def get_image(self, name):
         """ download the image preview """
         try:
@@ -337,6 +371,8 @@ class App(customtkinter.CTk):
         entry_pip.configure(state="readonly")
 
         entry_pip.bind('<Double-1>', on_entry_click)
+    
+    # def lang_database(self):
 
     def read_database(self):
         """ read the database containing package data """
