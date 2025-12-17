@@ -33,13 +33,19 @@ class App(customtkinter.CTk):
     def __init__(self):
         global main_selected_lang, active_language
         super().__init__()
+
         self.load_the_database()
         self.load_lang_texts()
         self.load_lang_database()
         main_selected_lang = self.lang_database["selected_language"]
         active_language = self.lang_database["language_list"].get(main_selected_lang)
 
-        self.title("Tkinter Toolkit")
+        def texts_for_language():
+            # Language text part
+            return self.lang_texts
+        texts = texts_for_language()
+
+        self.title(texts["aboutpage_text1"])
         self.width = int(self.winfo_screenwidth()/2)
         self.height = int(self.winfo_screenheight()/1.5)
         self.geometry(f"{self.width}x{self.height}")
