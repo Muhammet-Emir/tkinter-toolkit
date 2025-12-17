@@ -7,6 +7,7 @@ Homepage: https://github.com/Akascape/tkinter-toolkit
 """
 
 try:
+    from CTkScrollableDropdown import *
     import customtkinter
     from PIL import Image, ImageTk
     import os
@@ -28,7 +29,7 @@ class App(customtkinter.CTk):
 
     DIRPATH = os.path.join(os.path.dirname(__file__))
     LOADED_IMAGES = {}
-    
+
     def __init__(self):
         super().__init__()
         
@@ -85,6 +86,7 @@ class App(customtkinter.CTk):
         self.item_frame = {}
         self.modules = [pkg.key for pkg in pkg_resources.working_set]
         self.read_database()
+        self.load_language()
         
     def add_item(self, name, icon):
         """ add new package to the list """
@@ -157,7 +159,7 @@ class App(customtkinter.CTk):
             
         def update_database():
             """ update the database and check for new packages """
-            database_file = os.path.join(App.DIRPATH, "assets", "database.json")
+            database_file = os.path.join(App.DIRPATH, "assets", "database_lang", "en_US", "database.json")
             try:
                 urlretrieve('https://raw.githubusercontent.com/Akascape/tkinter-toolkit/main/assets/database.json', database_file)
             except:            
@@ -209,12 +211,44 @@ class App(customtkinter.CTk):
         update_label.pack()
         self.about_button.configure(state="disabled")
 
+
+    def load_language(self):
+        global selected_language, lang_list, language_path, selected_language
+
+        language_path = os.path.join(App.DIRPATH, "assets", "language_list.json")
+        if os.path.exists(language_path):
+            with open(language_path, "r", encoding="utf-8") as f:
+                lang_list = json.load(f)
+
+
+        lang_texts = os.path.join(App.DIRPATH, "assets", "database", "en_US", "lang_texts.json")
+
+    def read_language_list(self):
+        """ open language  """
+
+
     def open_language_window(self):
-        """ open about window """
+        """ open language window """
+        print(lang_list)
+        selected_language = lang_list["selected_language"]
+        language_map = lang_list["language_list"]
+        language_list = list(language_map.keys())
+
         def close_toplevel():
             lang_window.destroy()
             self.lang_button.configure(state="normal")
-            
+
+        def button_language_confirm():
+            global selected_language
+            selected_language = lang_option_menu.get()
+            lang_list["selected_language"] = selected_language
+            with open(language_path, "w", encoding="utf-8") as f:
+                json.dump(self.lang_list, f, ensure_ascii=False, indent=4)
+
+
+            lang_window.destroy()
+            self.lang_button.configure(state="normal")
+
 
         lang_window = customtkinter.CTkToplevel(self)
         lang_window.title("Language selection")
@@ -232,11 +266,15 @@ class App(customtkinter.CTk):
         label_title = customtkinter.CTkLabel(lang_window, text="Choose a language", font=(self.font,17,"bold"))
         label_title.pack(fill="x", padx=10, pady=15)
 
-        lang_option_menu = customtkinter.CTkOptionMenu(lang_window, width=430)
-        lang_option_menu.pack(fill="x", padx=10, pady=10)
 
-        # CTkScrollableDropdown(lang_option_menu, values=values)
-        # Language_selection = customtkinter.CTkButton(lang_window, text="Update Database", command=update_database)
+
+        lang_option_menu = customtkinter.CTkOptionMenu(lang_window, width=150, bg_color="transparent", values=language_list)
+        lang_option_menu.pack(padx=10, pady=10,)
+        lang_option_menu.set(selected_language)
+        
+        # CTkScrollableDropdown(lang_option_menu, values=self.option_lang)
+        Language_selection = customtkinter.CTkButton(lang_window, width=150, text="Confirm", command=button_language_confirm)
+        Language_selection.pack(padx=10, pady=50)
 
         self.lang_button.configure(state="disabled")
 
@@ -376,7 +414,7 @@ class App(customtkinter.CTk):
 
     def read_database(self):
         """ read the database containing package data """
-        database = os.path.join(App.DIRPATH, "assets", "database.json")
+        database = os.path.join(App.DIRPATH, "assets", "database_lang" , "en_US", "database.json")
         if os.path.exists(database):
             with open(database) as f:
                 self.data = json.load(f)
