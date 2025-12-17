@@ -1,24 +1,4 @@
 {
-"Language_texts":{
-	"icon": "ctk",
-	"main_text_search": "search",
-	"main_text_all": "All",
-	"main_text_pip": "pip",
-	"main_text_manual": "manual",
-	"langpage_title": "Language selection",
-	"langpage_text": "Choose a language",
-	"langpage_button_text": "Confirm",
-	"aboutpage_title": "About",
-	"aboutpage_text1": "Tkinter Toolkit",
-	"aboutpage_text2": "Package finder for tkinter and customtkinter.",
-	"aboutpage_author": "Made by Akascape",
-	"aboutpage_text3": "Homepage",
-	"aboutpage_text4": "Submit Your Own Package",
-	"aboutpage_button_text": "Update Database",
-	"aboutpage_update_text_state1": "check for new packages!",
-	"aboutpage_update_text_state2": "database updated!"
-	},
-
 "CustomTkinter": {
 	"name": "customtkinter",
 	"type": "pip",
