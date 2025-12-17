@@ -31,21 +31,24 @@ class App(customtkinter.CTk):
     
     
     def __init__(self):
-        global main_selected_lang, active_language
+        global main_selected_lang, active_language, texts
         super().__init__()
-
-        self.load_the_database()
-        self.load_lang_texts()
+        
         self.load_lang_database()
         main_selected_lang = self.lang_database["selected_language"]
         active_language = self.lang_database["language_list"].get(main_selected_lang)
+        self.load_the_database()
+        self.load_lang_texts()
+        print(active_language), print(main_selected_lang)
+        
+        
 
         def texts_for_language():
             # Language text part
             return self.lang_texts
         texts = texts_for_language()
 
-        self.title(texts["aboutpage_text1"])
+        self.title("Tkinter Toolkit")
         self.width = int(self.winfo_screenwidth()/2)
         self.height = int(self.winfo_screenheight()/1.5)
         self.geometry(f"{self.width}x{self.height}")
@@ -72,7 +75,7 @@ class App(customtkinter.CTk):
         self.label = customtkinter.CTkLabel(master=self.frame, text="Tkinter Toolkit", font=(self.font,25,"bold"))
         self.label.grid(row=0, column=0, padx=10, pady=10)
 
-        self.entry = customtkinter.CTkEntry(master=self.frame, placeholder_text="search", width=200)
+        self.entry = customtkinter.CTkEntry(master=self.frame, placeholder_text= texts["main_text_search"], width=200)
         self.entry.grid(row=0, column=1, padx=5, pady=10, sticky="e")
         self.entry.bind("<KeyRelease>", lambda e: self.search_package(self.entry.get()))
 
@@ -82,7 +85,7 @@ class App(customtkinter.CTk):
         self.about_button = customtkinter.CTkButton(master=self.frame, text="i", hover=False, width=30, command=self.open_about_window)
         self.about_button.grid(row=0, column=3, padx=5, pady=10, sticky="e")
         
-        self.option_type = customtkinter.CTkSegmentedButton(self.frame, values=["All","pip", "manual"], selected_color=["grey40","grey10"],
+        self.option_type = customtkinter.CTkSegmentedButton(self.frame, values=[texts["main_text_all"],texts["main_text_pip"], texts["main_text_manual"]], selected_color=["grey40","grey10"],
                                                             selected_hover_color=["grey38","grey12"], height=30, command=self.filter_packages)
         self.option_type.set("All")
         self.option_type.grid(row=1, column=0, columnspan=4, padx=10, pady=10, sticky="ew")
@@ -180,10 +183,10 @@ class App(customtkinter.CTk):
                 i.pack_forget()
             self.item_frame = {}
             self.read_database()
-            update_label.configure(text="database updated!")
+            update_label.configure(text= texts["aboutpage_update_text_state2"])
 
         about_window = customtkinter.CTkToplevel(self)
-        about_window.title("About")
+        about_window.title(texts["aboutpage_title"])
         about_window.transient(self)
 
         spawn_x = int(self.winfo_width() * .5 + self.winfo_x() - .5 * 350 + 7)
@@ -197,28 +200,28 @@ class App(customtkinter.CTk):
 
         label_title = customtkinter.CTkLabel(about_window, text="Tkinter Toolkit", font=(self.font,25,"bold"))
         label_title.pack(fill="x", padx=10, pady=15)
-        info = "Package finder for tkinter and customtkinter. \n\nMade by Akascape"
+        info = (texts["aboutpage_text2"] + "\n\n" + texts["aboutpage_author"])
         label_info = customtkinter.CTkLabel(about_window, text=info, anchor="w", justify="left")
         label_info.pack(fill="x", padx=10)
         
-        repo_link = customtkinter.CTkLabel(about_window, text="Homepage", font=(self.font,13), text_color=["blue","cyan"])
+        repo_link = customtkinter.CTkLabel(about_window, text= texts["aboutpage_text3"], font=(self.font,13), text_color=["blue","cyan"])
         repo_link.pack(anchor="w", padx=10)
         
         repo_link.bind("<Button-1>", lambda event: webbrowser.open_new_tab("https://github.com/Akascape/tkinter-toolkit"))
         repo_link.bind("<Enter>", lambda event: repo_link.configure(font=(self.font,13,"underline"), cursor="hand2"))
         repo_link.bind("<Leave>", lambda event: repo_link.configure(font=(self.font,13), cursor="arrow"))
 
-        submit_package_link = customtkinter.CTkLabel(about_window, text="Submit Your Own Package", font=(self.font,13), text_color=["blue","cyan"])
+        submit_package_link = customtkinter.CTkLabel(about_window, text= texts["aboutpage_text4"], font=(self.font,13), text_color=["blue","cyan"])
         submit_package_link.pack(anchor="w", padx=10)
 
         submit_package_link.bind("<Button-1>", lambda event: webbrowser.open_new_tab("https://github.com/Akascape/tkinter-toolkit/discussions/1"))
         submit_package_link.bind("<Enter>", lambda event: submit_package_link.configure(font=(self.font,13,"underline"), cursor="hand2"))
         submit_package_link.bind("<Leave>", lambda event: submit_package_link.configure(font=(self.font,13), cursor="arrow"))
 
-        update_database_button = customtkinter.CTkButton(about_window, text="Update Database", command=update_database)
+        update_database_button = customtkinter.CTkButton(about_window, text= texts["aboutpage_button_text"], command=update_database)
         update_database_button.pack(pady=10)
 
-        update_label = customtkinter.CTkLabel(about_window, text="check for new packages!")
+        update_label = customtkinter.CTkLabel(about_window, text= texts["aboutpage_update_text_state1"])
         update_label.pack()
         self.about_button.configure(state="disabled")
         
@@ -263,7 +266,7 @@ class App(customtkinter.CTk):
 
 
         lang_window = customtkinter.CTkToplevel(self)
-        lang_window.title("Language selection")
+        lang_window.title(texts["langpage_title"])
         lang_window.transient(self)
 
         spawn_x = int(self.winfo_width() * .5 + self.winfo_x() - .5 * 350 + 7)
@@ -275,7 +278,7 @@ class App(customtkinter.CTk):
         lang_window.wm_iconbitmap()
         lang_window.after(300, lambda: lang_window.iconphoto(False, self.iconpath))
 
-        label_title = customtkinter.CTkLabel(lang_window, text="Choose a language", font=(self.font,17,"bold"))
+        label_title = customtkinter.CTkLabel(lang_window, text= texts["langpage_text"], font=(self.font,17,"bold"))
         label_title.pack(fill="x", padx=10, pady=15)
 
         self.lang_database_list = self.lang_database["language_list"]
@@ -285,8 +288,7 @@ class App(customtkinter.CTk):
         lang_option_menu.pack(padx=10, pady=10)
         lang_option_menu.set(main_selected_lang)
 
-        # CTkScrollableDropdown(lang_option_menu, values=values)
-        lang_confirm_button = customtkinter.CTkButton(lang_window, text="Confirm", command=lang_button)
+        lang_confirm_button = customtkinter.CTkButton(lang_window, text= texts["langpage_button_text"], command=lang_button)
         lang_confirm_button.pack(padx=10, pady=35)
 
         self.lang_button.configure(state="disabled")

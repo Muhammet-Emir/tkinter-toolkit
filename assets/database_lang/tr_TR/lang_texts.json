@@ -1,20 +1,18 @@
 {
-    "Language_texts":{
-	"main_text_search": "arama",
-	"main_text_all": "Hepsi",
-	"main_text_pip": "pip",
-	"main_text_manual": "manuel",
-	"langpage_title": "Dil Seçimi",
-	"langpage_text": "Dil Seçiniz",
-	"langpage_button_text": "Onayla",
-	"aboutpage_title": "Hakkında",
-	"aboutpage_text1": "Tkinter Toolkit",
-	"aboutpage_text2": "Tkinter ve customtkinter için paket bulucu.",
-	"aboutpage_author": "Akascape tarafından Yapıldı",
-	"aboutpage_text3": "Anasayfa",
-	"aboutpage_text4": "Kendi paketini yükle",
-	"aboutpage_button_text": "Veritabanını güncelle",
-	"aboutpage_update_text_state1": "paketleri kontrol et!",
-	"aboutpage_update_text_state2": "veritabanı güncellendi!"
-	}
+"main_text_search": "arama",
+"main_text_all": "Hepsi",
+"main_text_pip": "pip",
+"main_text_manual": "manuel",
+"langpage_title": "Dil Seçimi",
+"langpage_text": "Dil Seçiniz",
+"langpage_button_text": "Onayla",
+"aboutpage_title": "Hakkında",
+"aboutpage_text1": "Tkinter Toolkit",
+"aboutpage_text2": "Tkinter ve customtkinter için paket bulucu.",
+"aboutpage_author": "Akascape tarafından Yapıldı",
+"aboutpage_text3": "Anasayfa",
+"aboutpage_text4": "Kendi paketini yükle",
+"aboutpage_button_text": "Veritabanını güncelle",
+"aboutpage_update_text_state1": "yeni paketleri kontrol et!",
+"aboutpage_update_text_state2": "veritabanı güncellendi!"
 }
