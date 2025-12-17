@@ -31,10 +31,13 @@ class App(customtkinter.CTk):
     
     
     def __init__(self):
+        global main_selected_lang, active_language
         super().__init__()
         self.load_the_database()
         self.load_lang_texts()
         self.load_lang_database()
+        main_selected_lang = self.lang_database["selected_language"]
+        active_language = self.lang_database["language_list"].get(main_selected_lang)
 
         self.title("Tkinter Toolkit")
         self.width = int(self.winfo_screenwidth()/2)
@@ -161,8 +164,7 @@ class App(customtkinter.CTk):
             
         def update_database():
             """ update the database and check for new packages """
-            database_file = os.path.join(App.DIRPATH, "assets", "database.json")
-            database_file = os.path.join(App.DIRPATH, "assets", "database.json")
+            database_file = os.path.join(App.DIRPATH, "assets", "database_lang", "en_US", "database.json")
             try:
                 urlretrieve('https://raw.githubusercontent.com/Akascape/tkinter-toolkit/main/assets/database.json', database_file)
             except:            
@@ -216,14 +218,14 @@ class App(customtkinter.CTk):
         
     def load_the_database(self):
         global load_the_database ,the_database # this database contains database.json
-        database_path = os.path.join(self.DIRPATH, "assets", "database_lang", "en_US", "database.json")
+        database_path = os.path.join(self.DIRPATH, "assets", "database_lang", active_language, "database.json")
         if os.path.exists(database_path):
             with open(database_path, "r", encoding="utf-8") as f:
                 self.the_database = json.load(f)
 
     def load_lang_texts(self):
         global load_lang_texts ,lang_texts # this database contains lang_texts.json
-        lang_texts_path = os.path.join(App.DIRPATH, "assets", "database_lang", "en_US", "lang_texts.json")
+        lang_texts_path = os.path.join(App.DIRPATH, "assets", "database_lang", active_language, "lang_texts.json")
         if os.path.exists(lang_texts_path):
             with open(lang_texts_path, "r", encoding="utf-8") as f:
                 self.lang_texts = json.load(f)
@@ -235,11 +237,8 @@ class App(customtkinter.CTk):
             with open(lang_database_path, "r", encoding="utf-8") as f:
                 self.lang_database = json.load(f)
 
-    
-
     def open_language_window(self):
         """ open about window """
-        main_selected_lang = "English"
 
         def close_toplevel():
             lang_window.destroy()
@@ -249,10 +248,12 @@ class App(customtkinter.CTk):
             global main_selected_lang
 
             main_selected_lang = lang_option_menu.get()
-            print (self.lang_database), print(main_selected_lang)
-            self.lang_database["selected_lang"] = main_selected_lang # Changed in the ram!!!
-            with open(lang_database_path, "w", encoding="utf-8") as f:
-                json.dump(self.lang_database, f, ensure_ascii=False, indent=4) # Changed in json file
+            if not (self.lang_database["selected_language"] == main_selected_lang):
+                self.lang_database["selected_language"] = main_selected_lang # Changed in the ram!!!
+                with open(lang_database_path, "w", encoding="utf-8") as f:
+                    json.dump(self.lang_database, f, ensure_ascii=False, indent=4) # Changed in json file
+            lang_window.destroy() #Closes the language choosing page
+            self.lang_button.configure(state="normal") # Makes language button accesible again
 
 
         lang_window = customtkinter.CTkToplevel(self)
@@ -418,12 +419,10 @@ class App(customtkinter.CTk):
 
         entry_pip.bind('<Double-1>', on_entry_click)
     
-    # def lang_database(self):
 
     def read_database(self):
         """ read the database containing package data """
-        database = os.path.join(App.DIRPATH, "assets", "database.json")
-        database = os.path.join(App.DIRPATH, "assets", "database.json")
+        database = os.path.join(App.DIRPATH, "assets", "database_lang", active_language, "database.json")
         if os.path.exists(database):
             with open(database) as f:
                 self.data = json.load(f)
