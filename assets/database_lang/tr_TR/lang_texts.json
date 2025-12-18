@@ -1,4 +1,5 @@
 {
+"main_title_ttk": "Tkinter Toolkit",
 "main_text_search": "arama",
 "main_text_all": "Hepsi",
 "main_text_pip": "pip",
@@ -6,6 +7,7 @@
 "langpage_title": "Dil Seçimi",
 "langpage_text": "Dil Seçiniz",
 "langpage_button_text": "Onayla",
+"langpage_update_guide": "Lütfen değişiklikleri görmek için uygulamayı yeniden başlatın.",
 "aboutpage_title": "Hakkında",
 "aboutpage_text1": "Tkinter Toolkit",
 "aboutpage_text2": "Tkinter ve customtkinter için paket bulucu.",
@@ -14,5 +16,12 @@
 "aboutpage_text4": "Kendi paketini yükle",
 "aboutpage_button_text": "Veritabanını güncelle",
 "aboutpage_update_text_state1": "yeni paketleri kontrol et!",
-"aboutpage_update_text_state2": "veritabanı güncellendi!"
+"aboutpage_noconnet": "bağlantı yok!",
+"aboutpage_update_text_state2": "veritabanı güncellendi!",
+"image_text": "Resim yükleniyor...",
+"repo_link": "Depo bağlantısı: ",
+"stars_text": "Yıldız: ",
+"stars_nta": "Yıldız: Mevcut Değil",
+"hl_label": "Özellikler:",
+"ins_label": "İndirme tipi: "
 }

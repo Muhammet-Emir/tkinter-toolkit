@@ -72,7 +72,7 @@ class App(customtkinter.CTk):
         else:
             self.font = customtkinter.ThemeManager.theme["CTkFont"]["family"]
             
-        self.label = customtkinter.CTkLabel(master=self.frame, text="Tkinter Toolkit", font=(self.font,25,"bold"))
+        self.label = customtkinter.CTkLabel(master=self.frame, text=texts["main_title_ttk"], font=(self.font,25,"bold"))
         self.label.grid(row=0, column=0, padx=10, pady=10)
 
         self.entry = customtkinter.CTkEntry(master=self.frame, placeholder_text= texts["main_text_search"], width=200)
@@ -148,20 +148,20 @@ class App(customtkinter.CTk):
         
     def filter_packages(self, type_):
         """ filter out packages based on download type """
-        if type_=="All":
+        if type_==texts["main_text_all"] or type_=="All":
             for i in self.item_frame.values():
                 i.pack(expand=True, fill="x", padx=5, pady=5)
-        elif type_=="pip":
+        elif type_==texts["main_text_pip"]:
             for i in self.item_frame.values():
                 i.pack_forget()
             for i in self.data.keys():
-                if self.data[i]["type"]=="pip":
+                if self.data[i]["type"]==texts["main_text_pip"] or self.data[i]["type"]=="pip":
                     self.item_frame[i].pack(expand=True, fill="x", padx=5, pady=5)
-        elif type_=="manual":
+        elif type_==texts["main_text_manual"]:
             for i in self.item_frame.values():
                 i.pack_forget()
             for i in self.data.keys():
-                if self.data[i]["type"]=="manual":
+                if self.data[i]["type"]==texts["main_text_manual"] or self.data[i]["type"]=="manual":
                     self.item_frame[i].pack(expand=True, fill="x", padx=5, pady=5)
         self.search_package(self.entry.get())
         
@@ -177,7 +177,7 @@ class App(customtkinter.CTk):
             try:
                 urlretrieve('https://raw.githubusercontent.com/Akascape/tkinter-toolkit/main/assets/database.json', database_file)
             except:            
-                update_label.configure(text="no connection!")
+                update_label.configure(text=texts["aboutpage_noconnet"])
                 return
             for i in self.item_frame.values():
                 i.pack_forget()
@@ -198,7 +198,7 @@ class App(customtkinter.CTk):
         about_window.wm_iconbitmap()
         about_window.after(300, lambda: about_window.iconphoto(False, self.iconpath))
 
-        label_title = customtkinter.CTkLabel(about_window, text="Tkinter Toolkit", font=(self.font,25,"bold"))
+        label_title = customtkinter.CTkLabel(about_window, text= texts["main_title_ttk"], font=(self.font,25,"bold")) # Used "main_title_ttk" other than "aboutpage_text1" cus its same text
         label_title.pack(fill="x", padx=10, pady=15)
         info = (texts["aboutpage_text2"] + "\n\n" + texts["aboutpage_author"])
         label_info = customtkinter.CTkLabel(about_window, text=info, anchor="w", justify="left")
@@ -338,7 +338,7 @@ class App(customtkinter.CTk):
         scrollable_info = customtkinter.CTkScrollableFrame(toplevel)
         scrollable_info.pack(fill="both", padx=10, pady=10, expand=True)
         
-        image_label = customtkinter.CTkLabel(scrollable_info, fg_color=["grey86", "grey16"], height=200, corner_radius=20, text="Image is Loading...")
+        image_label = customtkinter.CTkLabel(scrollable_info, fg_color=["grey86", "grey16"], height=200, corner_radius=20, text=texts["image_text"])
         image_label.pack(fill="both", padx=10, pady=10, expand=True)
 
         def add_image():
@@ -366,7 +366,7 @@ class App(customtkinter.CTk):
         author.pack(fill="x", padx=10, pady=(0,10))
 
         frame_link = customtkinter.CTkFrame(scrollable_info, fg_color="transparent")
-        self.repo = customtkinter.CTkLabel(frame_link, text="Repository Link: ", font=(self.font,14,"bold"))
+        self.repo = customtkinter.CTkLabel(frame_link, text=texts["repo_link"], font=(self.font,14,"bold"))
         self.repo.pack(anchor="w", side="left")
         
         label_stars = customtkinter.CTkButton(scrollable_info, text=f"Stars: ", anchor="w", font=(self.font, 15, "bold"), image=self.starimage,
@@ -389,7 +389,7 @@ class App(customtkinter.CTk):
             if stars:
                 label_stars.configure(text=f"Stars: {stars}")
             else:
-                label_stars.configure(text="Stars: Not Available")
+                label_stars.configure(text= texts["stars_nta"])
 
         threading.Thread(target=add_stats_avatar, daemon=True).start()
 
@@ -406,7 +406,7 @@ class App(customtkinter.CTk):
             features+= f"• {i}\n"
         features = features.strip()
             
-        heighlights_label = customtkinter.CTkLabel(scrollable_info, text="Features:", anchor="w", font=(self.font, 15, "bold"))
+        heighlights_label = customtkinter.CTkLabel(scrollable_info, text= texts["hl_label"], anchor="w", font=(self.font, 15, "bold"))
         heighlights_label.pack(fill="x", padx=10, pady=(0, 0))
 
         highlights = customtkinter.CTkLabel(scrollable_info, text=features, anchor="w", justify="left", font=(self.font, 14))

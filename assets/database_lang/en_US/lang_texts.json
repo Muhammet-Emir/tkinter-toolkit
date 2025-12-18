@@ -1,4 +1,5 @@
 {
+"main_title_ttk": "Tkinter Toolkit",
 "main_text_search": "search",
 "main_text_all": "All",
 "main_text_pip": "pip",
@@ -6,6 +7,7 @@
 "langpage_title": "Language selection",
 "langpage_text": "Choose a language",
 "langpage_button_text": "Confirm",
+"langpage_update_guide": "Please restart the application to see the changes.",
 "aboutpage_title": "About",
 "aboutpage_text1": "Tkinter Toolkit",
 "aboutpage_text2": "Package finder for tkinter and customtkinter.",
@@ -14,5 +16,12 @@
 "aboutpage_text4": "Submit Your Own Package",
 "aboutpage_button_text": "Update Database",
 "aboutpage_update_text_state1": "check for new packages!",
-"aboutpage_update_text_state2": "database updated!"
+"aboutpage_noconnet": "no connection!",
+"aboutpage_update_text_state2": "database updated!",
+"image_text": "Image is Loading...",
+"repo_link": "Repository link: ",
+"stars_text": "Stars: ",
+"stars_nta": "Stars: Not Available",
+"hl_label": "Features:",
+"ins_label": "Installation type: "
 }
