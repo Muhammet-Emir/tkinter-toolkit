@@ -414,8 +414,14 @@ class App(customtkinter.CTk):
 
         highlights = customtkinter.CTkLabel(scrollable_info, text=features, anchor="w", justify="left", font=(self.font, 14))
         highlights.pack(fill="x",padx=(20, 10), pady=5)
+        
+        active_type = "null"
+        if self.data[name]['type'] == "manual":
+            active_type = texts["main_text_manual"]
+        elif self.data[name]['type'] == "pip":
+            active_type = texts["main_text_pip"]
 
-        label_install = customtkinter.CTkLabel(scrollable_info, text=f"{texts["ins_label"]} {self.data[name]['type']}", anchor="w", font=(self.font, 15, "bold"))
+        label_install = customtkinter.CTkLabel(scrollable_info, text=f"{texts["ins_label"]} {active_type}", anchor="w", font=(self.font, 15, "bold"))
         label_install.pack(fill="x", padx=12, pady=5)
         
         def on_entry_click(event):
