@@ -139,7 +139,7 @@ class App(customtkinter.CTk):
         for i in self.data.keys():
             for j in self.data[i]["tags"]:
                 if j.replace(" ", "").startswith(string.lower().replace(" ", "")):
-                    if self.data[i]["type"]==self.option_type.get() or self.option_type.get()=="All":
+                    if self.data[i]["type"]==self.option_type.get() or self.option_type.get()==texts["main_text_all"] or self.option_type.get()=="All":
                         self.item_frame[i].pack(expand=True, fill="x", padx=5, pady=5)
                         break
                 else:
@@ -270,9 +270,9 @@ class App(customtkinter.CTk):
         lang_window.transient(self)
 
         spawn_x = int(self.winfo_width() * .5 + self.winfo_x() - .5 * 350 + 7)
-        spawn_y = int(self.winfo_height() * .5 + self.winfo_y() - .5 * 275 + 20)
+        spawn_y = int(self.winfo_height() * .5 + self.winfo_y() - .5 * 250 + 20)
  
-        lang_window.geometry(f"350x275+{spawn_x}+{spawn_y}")
+        lang_window.geometry(f"350x250+{spawn_x}+{spawn_y}")
         lang_window.resizable(False, False)
         lang_window.protocol("WM_DELETE_WINDOW", close_toplevel)
         lang_window.wm_iconbitmap()
@@ -284,12 +284,15 @@ class App(customtkinter.CTk):
         self.lang_database_list = self.lang_database["language_list"]
         lang_options = list(self.lang_database_list.keys())
 
-        lang_option_menu = customtkinter.CTkOptionMenu(lang_window, width=220, values=lang_options)
+        lang_option_menu = customtkinter.CTkOptionMenu(lang_window, width=200, values=lang_options, fg_color=["grey80", "grey20"])
         lang_option_menu.pack(padx=10, pady=10)
         lang_option_menu.set(main_selected_lang)
 
-        lang_confirm_button = customtkinter.CTkButton(lang_window, text= texts["langpage_button_text"], command=lang_button)
+        lang_confirm_button = customtkinter.CTkButton(lang_window, text= texts["langpage_button_text"], command=lang_button, fg_color=["grey80", "grey20"])
         lang_confirm_button.pack(padx=10, pady=35)
+
+        label_info = customtkinter.CTkLabel(lang_window, text= texts["langpage_update_guide"], font=(self.font,11))
+        label_info.pack(fill="x", padx=10, pady=5)
 
         self.lang_button.configure(state="disabled")
 
@@ -359,7 +362,7 @@ class App(customtkinter.CTk):
                                             justify="left", font=(self.font,14))
         label_desc.pack(fill="x", padx=10, pady=10)
         
-        label_owner = customtkinter.CTkLabel(scrollable_info, text=f"Author", anchor="w", font=(self.font, 18, "bold"))
+        label_owner = customtkinter.CTkLabel(scrollable_info, text=f"{texts["auth_label"]}", anchor="w", font=(self.font, 18, "bold"))
         label_owner.pack(fill="x", padx=10)
         
         author = customtkinter.CTkButton(scrollable_info, text=self.data[name]["author"], anchor="w", font=(self.font, 16), hover=False, fg_color="transparent")
@@ -369,7 +372,7 @@ class App(customtkinter.CTk):
         self.repo = customtkinter.CTkLabel(frame_link, text=texts["repo_link"], font=(self.font,14,"bold"))
         self.repo.pack(anchor="w", side="left")
         
-        label_stars = customtkinter.CTkButton(scrollable_info, text=f"Stars: ", anchor="w", font=(self.font, 15, "bold"), image=self.starimage,
+        label_stars = customtkinter.CTkButton(scrollable_info, text=f"{texts["stars_text"]}", anchor="w", font=(self.font, 15, "bold"), image=self.starimage,
                                               compound="left", hover=False, fg_color="transparent")
         label_stars.pack(fill="x", padx=(0, 10))
 
@@ -387,7 +390,7 @@ class App(customtkinter.CTk):
             if not toplevel.winfo_exists():
                 return
             if stars:
-                label_stars.configure(text=f"Stars: {stars}")
+                label_stars.configure(text=f"{texts["stars_text"]} {stars}")
             else:
                 label_stars.configure(text= texts["stars_nta"])
 
@@ -412,7 +415,7 @@ class App(customtkinter.CTk):
         highlights = customtkinter.CTkLabel(scrollable_info, text=features, anchor="w", justify="left", font=(self.font, 14))
         highlights.pack(fill="x",padx=(20, 10), pady=5)
 
-        label_install = customtkinter.CTkLabel(scrollable_info, text=f"Installation type: {self.data[name]['type']}", anchor="w", font=(self.font, 15, "bold"))
+        label_install = customtkinter.CTkLabel(scrollable_info, text=f"{texts["ins_label"]} {self.data[name]['type']}", anchor="w", font=(self.font, 15, "bold"))
         label_install.pack(fill="x", padx=12, pady=5)
         
         def on_entry_click(event):
