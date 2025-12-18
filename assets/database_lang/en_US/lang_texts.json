@@ -24,5 +24,6 @@
 "stars_nta": "Stars: Not Available",
 "hl_label": "Features:",
 "ins_label": "Installation type: ",
-"auth_label": "Author:"
+"auth_label": "Author:",
+"version_text": "version:"
 }

@@ -125,7 +125,7 @@ class App(customtkinter.CTk):
 
         if self.data[name]["name"] in self.modules:
             version = pkg_resources.get_distribution(self.data[name]["name"]).version
-            desc = f"{self.data[name]['desc']} \nversion: {version}"
+            desc = f"{self.data[name]['desc']} \n{texts["version_text"]} {version}"
             self.data[name]["installation"] = f"{self.data[name]['installation']} --upgrade"
         else:
             self.item_frame[name].configure(fg_color=["grey80", "grey20"])
