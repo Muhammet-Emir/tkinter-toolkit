@@ -1,0 +1,1927 @@
+{
+	"CustomTkinter": {
+		"name": "customtkinter",
+		"type": "pip",
+		"icon": "ctk",
+		"desc": "Современная UI-библиотека",
+		"full_desc": "CustomTkinter — это python UI-библиотека на базе Tkinter, которая предоставляет новые, современные и полностью настраиваемые виджеты. Они создаются и используются так же, как обычные виджеты Tkinter, и также могут использоваться вместе со стандартными элементами Tkinter. Цвета виджетов и окон адаптируются к внешнему виду системы или к вручную выбранному режиму (“светлый”, “тёмный”), а все виджеты и окна CustomTkinter поддерживают масштабирование HighDPI (Windows, macOS). С CustomTkinter вы получаете единый и современный внешний вид на всех настольных платформах (Windows, macOS, Linux).",
+		"author": "TomSchimansky",
+		"highlights": [
+			"Полностью настраиваемые виджеты",
+			"CTkButton",
+			"CTkEntry",
+			"CTkComboBox",
+			"CTkFrame",
+			"CTkToplevel",
+			"CTkLabel",
+			"CTkScrollableFrame",
+			"CTkSlider",
+			"CTkTabview",
+			"CTkSwitch",
+			"CTkTextbox",
+			"И многое другое..."
+		],
+		"repo_url": "https://github.com/TomSchimansky/CustomTkinter",
+		"image_url": "https://raw.githubusercontent.com/TomSchimansky/CustomTkinter/master/documentation_images/complex_example_dark_Windows.png",
+		"installation": "pip install customtkinter",
+		"tags": [
+			"customtkinter",
+			"tkinter",
+			"ctk",
+			"frame",
+			"toplevel",
+			"combobox",
+			"slider",
+			"progressbar",
+			"text",
+			"button",
+			"entry",
+			"label"
+		]
+	},
+	"CTkMessagebox": {
+		"name": "ctkmessagebox",
+		"type": "pip",
+		"icon": "ctk",
+		"desc": "Окно сообщений для CTk",
+		"full_desc": "Современное и полностью настраиваемое окно сообщений для CustomTkinter.",
+		"author": "Akascape",
+		"highlights": [
+			"Добавляет пользовательские значки или изображения",
+			"Добавляет несколько вариантов выбора по вашему запросу",
+			"Поставляется с 5 стандартными значками",
+			"Появляется по центру экрана/приложения",
+			"Нет некрасивых заголовков или рамок",
+			"Эффект появления/исчезновения окна (Fade-in/Fade-out)"
+		],
+		"repo_url": "https://github.com/Akascape/CTkMessagebox",
+		"image_url": "https://user-images.githubusercontent.com/89206401/221258593-75058878-b598-40c3-828a-1d44a6cefb73.jpg",
+		"installation": "pip install CTkMessagebox",
+		"tags": [
+			"ctkmessagebox",
+			"customtkinter",
+			"messagebox",
+			"box",
+			"info",
+			"icons",
+			"popup"
+		]
+	},
+	"CTkColorPicker": {
+		"name": "ctkcolorpicker",
+		"type": "pip",
+		"icon": "ctk",
+		"desc": "Выбор цвета для CTk",
+		"full_desc": "Современный выбор цвета для CustomTkinter!",
+		"author": "Akascape",
+		"highlights": [
+			"Окно выбора цвета",
+			"Виджет выбора цвета",
+			"Установить начальный цвет [бета-стадия]"
+		],
+		"repo_url": "https://github.com/Akascape/CTkColorPicker",
+		"image_url": "https://user-images.githubusercontent.com/89206401/209182773-d76bf05c-610e-4297-aec5-7bb61a11d6d3.jpg",
+		"installation": "pip install CTkColorPicker",
+		"tags": [
+			"ctkcolorpicker",
+			"customtkinter",
+			"colorpicker",
+			"colors",
+			"picker",
+			"color chooser"
+		]
+	},
+	"CTkTable": {
+		"name": "ctktable",
+		"type": "pip",
+		"icon": "ctk",
+		"desc": "Виджет таблицы для CTk",
+		"full_desc": "Быстрый и простой виджет таблицы со всеми базовыми возможностями.",
+		"author": "Akascape",
+		"highlights": [
+			"Добавлять/редактировать/удалять строки и столбцы",
+			"Вводить значения в ячейки",
+			"Обновлять значения в ячейках",
+			"Добавлять команду"
+		],
+		"repo_url": "https://github.com/Akascape/CTkTable",
+		"image_url": "https://user-images.githubusercontent.com/89206401/233420929-bf210cb3-5b5f-49b2-ba7a-f01d187e72cf.jpg",
+		"installation": "pip install CTkTable",
+		"tags": [
+			"ctktable",
+			"customtkinter",
+			"table",
+			"treeview",
+			"tabular",
+			"data"
+		]
+	},
+	"CTkTooltip": {
+		"name": "ctktooltip",
+		"type": "pip",
+		"icon": "ctk",
+		"desc": "Подсказки (tooltip) для CTk",
+		"full_desc": "Небольшая всплывающая подсказка-метка для отображения деталей в виджетах CustomTkinter.",
+		"author": "Akascape",
+		"highlights": [
+			"Отображение над любым виджетом",
+			"Скруглённые углы",
+			"Эффекты прозрачности",
+			"Показывать значения в реальном времени"
+		],
+		"repo_url": "https://github.com/Akascape/CTkToolTip",
+		"image_url": "https://user-images.githubusercontent.com/89206401/242210130-7c39fd9a-32bc-4ed3-b33a-575572d9ae66.jpg",
+		"installation": "pip install CTkToolTip",
+		"tags": [
+			"ctktooltip",
+			"customtkinter",
+			"tooltips",
+			"tips",
+			"popup"
+		]
+	},
+	"CTkScrollableDropdown": {
+		"name": "ctkscrollabledropdown",
+		"type": "manual",
+		"icon": "ctk",
+		"desc": "Виджет DropdownMenu для Combobox и OptionMenu",
+		"full_desc": "Заменяет старомодный tkMenu и добавляет новое прокручиваемое выпадающее меню к customtkinter optionmenu, combobox, entries, buttons и т. д...",
+		"author": "Akascape",
+		"highlights": [
+			"Скруглённые углы",
+			"Задайте пользовательскую высоту меню",
+			"Автоизменение размера",
+			"Опции автодополнения"
+		],
+		"repo_url": "https://github.com/Akascape/CTkScrollableDropdown",
+		"image_url": "https://user-images.githubusercontent.com/89206401/236677843-8d8b76fd-6145-47b1-8f4d-b6a64b08e1ea.png",
+		"installation": "https://github.com/Akascape/CTkScrollableDropdown",
+		"tags": [
+			"ctkscrollabledropdown",
+			"customtkinter",
+			"menu",
+			"dropdownmenu"
+		]
+	},
+	"CTkRangeSlider": {
+		"name": "ctkrangeslider",
+		"type": "manual",
+		"icon": "ctk",
+		"desc": "Виджет ползунка диапазона для CTk",
+		"full_desc": "Виджет ползунка диапазона, созданный для CustomTkinter.",
+		"author": "Akascape",
+		"highlights": [
+			"Работает как CTkSlider",
+			"Двухползунковый слайдер",
+			"Отдельные команды",
+			"Полная настраиваемость"
+		],
+		"repo_url": "https://github.com/Akascape/CTkRangeSlider",
+		"image_url": "https://user-images.githubusercontent.com/89206401/229349732-0e078b00-f2b7-46e7-9774-313090253769.jpg",
+		"installation": "https://github.com/Akascape/CTkRangeSlider",
+		"tags": [
+			"ctkrangeslider",
+			"customtkinter",
+			"slider",
+			"rangeslider",
+			"dual",
+			"range slider"
+		]
+	},
+	"CTkMenuBar": {
+		"name": "ctkmenubar",
+		"type": "pip",
+		"icon": "ctk",
+		"desc": "Виджет пользовательской панели инструментов",
+		"full_desc": "Современная библиотека виджета меню-бар для customtkinter.",
+		"author": "Akascape",
+		"highlights": [
+			"Современное выпадающее меню",
+			"Добавление подменю",
+			"Меню в строке заголовка",
+			"Добавление каскадов",
+			"Добавление разделителей"
+		],
+		"repo_url": "https://github.com/Akascape/CTkMenuBar",
+		"image_url": "https://user-images.githubusercontent.com/89206401/241711282-02c512b2-557f-4d59-86e0-a6eb9da3696c.png",
+		"installation": "pip install CTkMenuBar",
+		"tags": [
+			"ctkmenubar",
+			"menubar",
+			"titlebar",
+			"dropdownmenu",
+			"toolbar"
+		]
+	},
+	"CTkPopupKeyboard": {
+		"name": "ctkpopupkeyboard",
+		"type": "manual",
+		"icon": "ctk",
+		"desc": "Виджет экранной клавиатуры/нумпада",
+		"full_desc": "Виджет экранной клавиатуры/нумпада для entries и textbox в customtkinter.",
+		"author": "Akascape",
+		"highlights": [
+			"Пользовательская клавиатура и нумпад",
+			"Все символы клавиш",
+			"Эффекты прозрачности"
+		],
+		"repo_url": "https://github.com/Akascape/CTkPopupKeyboard",
+		"image_url": "https://user-images.githubusercontent.com/89206401/236622957-5e140b42-eeaa-41de-aeb3-a6d95d3023b1.png",
+		"installation": "https://github.com/Akascape/CTkPopupKeyboard",
+		"tags": [
+			"ctkpopupkeyboard",
+			"popup",
+			"keyboard",
+			"numpad",
+			"popupkeyboard",
+			"on screen"
+		]
+	},
+	"TkDial": {
+		"name": "tkdial",
+		"type": "pip",
+		"icon": "tk",
+		"desc": "Библиотека виджетов Dial/Knob",
+		"full_desc": "Это библиотека, содержащая круговые вращающиеся виджеты dial-knob для Tkinter. Её можно использовать вместо обычных слайдеров и scale.",
+		"author": "Akascape",
+		"highlights": [
+			"Виджет dial",
+			"Виджет meter",
+			"Круговой прогресс-бар",
+			"Виджет knob",
+			"Пользовательские knob-изображения"
+		],
+		"repo_url": "https://github.com/Akascape/TkDial",
+		"image_url": "https://user-images.githubusercontent.com/89206401/204718389-d3195b3b-0f7a-41c3-85b8-ffc1d961db70.png",
+		"installation": "pip install tkdial",
+		"tags": [
+			"tkdial",
+			"knob",
+			"dial",
+			"circular",
+			"sliders",
+			"meter"
+		]
+	},
+	"TkNodeSystem": {
+		"name": "tknodesystem",
+		"type": "pip",
+		"icon": "tk",
+		"desc": "Визуальный интерфейс на основе нод",
+		"full_desc": "TkNodeSystem — это нодальный интерфейс, по сути DAG, где каждый узел выполняет операцию над входными соединениями и выдаёт результат (который можно подключить к другому узлу). \nЕго можно использовать для реализации flow-based операций в вашем приложении. Его легко использовать с tkinter или customtkinter, так как он создан на canvas tkinter.",
+		"author": "Akascape",
+		"highlights": [
+			"Реализация UI на основе нод",
+			"Сохранение/загрузка деревьев нод",
+			"Несколько типов нод",
+			"Пользовательские операции",
+			"Встроенное меню нод",
+			"Перетаскивание и масштабирование canvas"
+		],
+		"repo_url": "https://github.com/Akascape/TkNodeSystem",
+		"image_url": "https://user-images.githubusercontent.com/89206401/238861383-a84cb60a-cc6f-4609-8452-3ff4fcd0c46b.png",
+		"installation": "pip install tknodesystem",
+		"tags": [
+			"nodes",
+			"dag",
+			"tknodes",
+			"tkinter",
+			"tknodesystem",
+			"visual",
+			"node system"
+		]
+	},
+	"CTkThemeMaker": {
+		"name": "ctkthememaker",
+		"type": "manual",
+		"icon": "pkg",
+		"desc": "Лёгкий создатель тем для CTk",
+		"full_desc": "Быстрый и простой конструктор тем для customtkinter!",
+		"author": "Akascape",
+		"highlights": [
+			"Создание пользовательских тем",
+			"Сохранение/загрузка тем",
+			"Быстрое тестирование тем",
+			"Без дополнительной установки"
+		],
+		"repo_url": "https://github.com/Akascape/CTkThemeMaker",
+		"image_url": "https://user-images.githubusercontent.com/89206401/216785762-7277326d-3a87-4e01-aae3-302af1e5ec3a.jpg",
+		"installation": "https://github.com/Akascape/CTkThemeMaker",
+		"tags": [
+			"themes",
+			"thememaker",
+			"customtkinter",
+			"customtkinter themes",
+			"colors"
+		]
+	},
+	"CTkDesigner": {
+		"name": "ctkdesigner",
+		"type": "manual",
+		"icon": "pkg",
+		"desc": "Простой GUI-дизайнер для CTk",
+		"full_desc": "Дизайнер окон без кода для customtkinter: просто перетаскивайте виджеты (drag & drop) и экономьте время.",
+		"author": "Akascape",
+		"highlights": [
+			"DRAG & DROP виджеты",
+			"Перемещение виджетов мышью",
+			"Настройка всех параметров",
+			"Точный метод place",
+			"13 CTk-виджетов",
+			"Создание и предпросмотр тем",
+			"Экспорт приложения в .py",
+			"Сохранение/открытие созданных шаблонов",
+			"Добавлены все необходимые функции и горячие клавиши"
+		],
+		"repo_url": "https://github.com/Akascape/CTkDesigner-Support",
+		"image_url": "https://github.com/Akascape/CTkDesigner-Support/assets/89206401/6435f49b-f7d0-4cba-8190-73cd71d77ac3",
+		"installation": "https://github.com/Akascape/CTkDesigner-Support",
+		"tags": [
+			"themes",
+			"ctkdesigner",
+			"customtkinter",
+			"draganddrop",
+			"designer",
+			"automatic",
+			"WYSIWYG",
+			"guidesign"
+		]
+	},
+	"CTkThemeBuilder": {
+		"name": "ctkthemebuilder",
+		"type": "manual",
+		"icon": "pkg",
+		"desc": "Продвинутый создатель тем для CTk",
+		"full_desc": "CTk Theme Builder предоставляет WYSIWYG-интерфейс для создания и поддержки тем CustomTkinter.",
+		"author": "Clive Bostock",
+		"highlights": [
+			"Создание пользовательских тем",
+			"Настройка всех цветов и свойств",
+			"Сохранение/загрузка тем",
+			"Живой предпросмотр темы",
+			"Цветовые палитры",
+			"Включены продвинутые инструменты"
+		],
+		"repo_url": "https://github.com/avalon60/ctk_theme_builder",
+		"image_url": "https://raw.githubusercontent.com/avalon60/ctk_theme_builder/develop/docs/CTkThemeBuilder-about.png",
+		"installation": "https://github.com/avalon60/ctk_theme_builder/releases",
+		"tags": [
+			"themes",
+			"thememaker",
+			"customtkinter",
+			"customtkinter themes",
+			"colors",
+			"themebuilder",
+			"build"
+		]
+	},
+	"TkVideoPlayer": {
+		"name": "tkvideoplayer",
+		"type": "pip",
+		"icon": "tk",
+		"desc": "Виджет видеоплеера",
+		"full_desc": "Простая библиотека для воспроизведения видеофайлов в tkinter. Также даёт возможность воспроизводить, ставить на паузу, пропускать и перематывать (seek) на определённые таймкоды.",
+		"author": "PaulleDemon",
+		"highlights": [
+			"Виджет видеоплеера",
+			"Переход к таймкодам",
+			"Воспроизведение/пауза видео",
+			"Изменяемый по размеру frame"
+		],
+		"repo_url": "https://github.com/PaulleDemon/tkVideoPlayer",
+		"image_url": "https://user-images.githubusercontent.com/89206401/196894602-d756d46c-4871-4a2f-b5cb-4b6ac1665c29.jpg",
+		"installation": "pip install tkvideoplayer",
+		"tags": [
+			"videoplayer",
+			"video player",
+			"tkvideoplayer",
+			"label"
+		]
+	},
+	"TkChart": {
+		"name": "tkchart",
+		"type": "pip",
+		"icon": "ctk",
+		"desc": "Виджет графиков для Tk",
+		"full_desc": "Создавайте графики в окнах tkinter!",
+		"author": "Thisal-D",
+		"highlights": [
+			"Легко строить графики",
+			"Настройка данных графика",
+			"Анимированный график",
+			"Полностью настраиваемый",
+			"Лёгкая библиотека"
+		],
+		"repo_url": "https://github.com/Thisal-D/tkchart",
+		"image_url": "https://user-images.githubusercontent.com/93121062/204732876-1d3f7526-93ea-4e5e-905b-b768020fd572.png",
+		"installation": "pip install tkchart",
+		"tags": [
+			"tkchart",
+			"ctkchart",
+			"chart",
+			"graph",
+			"plot",
+			"line chart"
+		]
+	},
+	"CTkDataVisualizingWidgets": {
+		"name": "ctkdatavisualizingwidgets",
+		"type": "manual",
+		"icon": "ctk",
+		"desc": "Пользовательские виджеты календаря, графиков и диаграмм",
+		"full_desc": "Библиотека, ориентированная на операции, связанные с отображением данных.",
+		"author": "ZikPin",
+		"highlights": [
+			"Современный виджет календаря",
+			"Виджет диаграмм (Chart)",
+			"Виджеты графиков",
+			"Полностью настраиваемые"
+		],
+		"repo_url": "https://github.com/ZikPin/CTkDataVisualizingWidgets",
+		"image_url": "https://user-images.githubusercontent.com/65452275/255221043-e40ea973-77d0-42c4-b740-535c15ad5748.png",
+		"installation": "https://github.com/ZikPin/CTkDataVisualizingWidgets",
+		"tags": [
+			"calendar",
+			"chart",
+			"graph",
+			"data visualizing",
+			"ctkdatavisualizingwidgets",
+			"widgets"
+		]
+	},
+	"CTkRadarChart": {
+		"name": "ctkradarchart",
+		"type": "manual",
+		"icon": "ctk",
+		"desc": "Радарная диаграмма для CTk",
+		"full_desc": "Виджет радарной диаграммы для customtkinter, виджет визуализации данных.",
+		"author": "Akascape",
+		"highlights": [
+			"Визуализация данных в радарной диаграмме",
+			"Полностью настраиваемая",
+			"Изменяемый по размеру виджет"
+		],
+		"repo_url": "https://github.com/Akascape/CTkRadarChart",
+		"image_url": "https://github.com/Akascape/CTkRadarChart/assets/89206401/0d3ecda5-f73d-4d27-b7d7-817cf42905ec",
+		"installation": "https://github.com/Akascape/CTkRadarChart",
+		"tags": [
+			"ctkradarchart",
+			"radarchart",
+			"spiderchart",
+			"webchart",
+			"polarchart",
+			"radialchart",
+			"chart",
+			"graph"
+		]
+	},
+	"CTkPieChart": {
+		"name": "ctkpiechart",
+		"type": "manual",
+		"icon": "ctk",
+		"desc": "Круговая диаграмма (pie) для CTk",
+		"full_desc": "Виджет круговой диаграммы для customtkinter, виджет визуализации данных.",
+		"author": "Akascape",
+		"highlights": [
+			"Визуализация данных в круговой диаграмме",
+			"Полностью настраиваемая",
+			"Автоматические расчёты",
+			"Без острых краёв"
+		],
+		"repo_url": "https://github.com/Akascape/CTkPieChart",
+		"image_url": "https://github.com/Akascape/CTkPieChart/assets/89206401/2632a3f0-bf79-40ec-a3a1-bf5252d571b9",
+		"installation": "https://github.com/Akascape/CTkPieChart",
+		"tags": [
+			"ctkpiechart",
+			"piechart",
+			"piegraph",
+			"circle",
+			"chart",
+			"graph"
+		]
+	},
+	"TkCalendar": {
+		"name": "tkcalendar",
+		"type": "pip",
+		"icon": "tk",
+		"desc": "Виджет календаря",
+		"full_desc": "tkcalendar — это python-модуль, который предоставляет виджеты Calendar и DateEntry для Tkinter. Виджет DateEntry похож на Combobox, но выпадающий список — это календарь для выбора даты. События можно отображать в календаре с пользовательскими цветами, а tooltip показывает список событий для выбранного дня. tkcalendar совместим с Python 2 и Python 3. Он поддерживает множество локалей (например, 'fr_FR', 'en_US', ..), а цвета можно настраивать.",
+		"author": "Juliette Monsel",
+		"highlights": [
+			"Виджет календаря",
+			"Множество настраиваемых опций",
+			"Виджет ввода даты"
+		],
+		"repo_url": "https://github.com/j4321/tkcalendar",
+		"image_url": "https://user-images.githubusercontent.com/89206401/207638596-9fb1389b-0d40-44c9-ad9a-755749ad5a04.jpg",
+		"installation": "pip install tkcalendar",
+		"tags": [
+			"tkcalendar",
+			"calendar",
+			"data",
+			"data entry",
+			"date",
+			"time"
+		]
+	},
+	"ttkwidgets": {
+		"name": "ttkwidgets",
+		"type": "pip",
+		"icon": "tk",
+		"desc": "Коллекция виджетов",
+		"full_desc": "Коллекция виджетов для ttk-расширений Tkinter от разных авторов.",
+		"author": "The TkinterEP team",
+		"highlights": [
+			"Более 20 уникальных виджетов в комплекте",
+			"Много настроек",
+			"Виджет таймлайна",
+			"Выбор шрифта",
+			"Выбор цвета",
+			"Виджеты автодополнения",
+			"Виджет таблицы",
+			"Подсказки (tooltips)",
+			"Виджет календаря",
+			"Виджет scale",
+			"Checkbox treeview",
+			"и многое другое..."
+		],
+		"repo_url": "https://github.com/TkinterEP/ttkwidgets",
+		"image_url": "https://user-images.githubusercontent.com/89206401/248753956-16277ff0-a754-46ce-b697-d50f4fcf4891.jpg",
+		"installation": "pip install ttkwidgets",
+		"tags": [
+			"widgets",
+			"ttkwidgets",
+			"tkinterep",
+			"timeline",
+			"colorchooser",
+			"calender",
+			"table",
+			"tooltip",
+			"link",
+			"font",
+			"treeview",
+			"autocomplete"
+		]
+	},
+	"ttkthemes": {
+		"name": "ttkthemes",
+		"type": "pip",
+		"icon": "tk",
+		"desc": "Коллекция тем для tkinter.ttk",
+		"full_desc": "Набор тем для ttk-расширений Tkinter, собранный @RedFantom и созданный разными авторами.",
+		"author": "The TkinterEP team",
+		"highlights": [
+			"Большое количество тем",
+			"Современные и ретро темы",
+			"Настройка тем на лету"
+		],
+		"repo_url": "https://github.com/TkinterEP/ttkthemes",
+		"image_url": "https://user-images.githubusercontent.com/77941087/248731276-5a9afbc8-c4f0-48e5-af17-d4116fab3245.png",
+		"installation": "pip install ttkthemes",
+		"tags": [
+			"themes",
+			"ttkthemes",
+			"tkinterep",
+			"tkinter themes"
+		]
+	},
+	"TkTerm": {
+		"name": "tkterm",
+		"type": "pip",
+		"icon": "tk",
+		"desc": "Полный эмулятор консоли",
+		"full_desc": "Полнофункциональный эмулятор терминала на базе Tkinter — выполняет все базовые команды терминала. \nТерминал реализован как виджет Frame и легко интегрируется в другие приложения Tkinter.",
+		"author": "Dhanoo Surasarang",
+		"highlights": [
+			"Можно передавать все команды терминала",
+			"Полностью настраиваемый",
+			"Полнофункциональный",
+			"Встроенные настройки",
+			"Несколько вкладок"
+		],
+		"repo_url": "https://github.com/dhanoosu/TkTerm",
+		"image_url": "https://repository-images.githubusercontent.com/451250393/87f50d40-fbaa-4a1d-b7e6-00eb0da2fdfb",
+		"installation": "pip install tkterm",
+		"tags": [
+			"tkterminal",
+			"terminal",
+			"console",
+			"command line",
+			"command prompt"
+		]
+	},
+	"TkTerminal": {
+		"name": "tkterminal",
+		"type": "pip",
+		"icon": "tk",
+		"desc": "Виджет консоли",
+		"full_desc": "Эта библиотека добавляет виджет терминала в Tkinter. Выполняйте почти все операции терминала с tkterminal.",
+		"author": "Saad Mairaj",
+		"highlights": [
+			"Можно передавать все команды терминала",
+			"Включить shell",
+			"Включить панель номеров строк для терминала",
+			"Передавать команды, которые требуют ввода"
+		],
+		"repo_url": "https://github.com/Saadmairaj/tkterminal",
+		"image_url": "https://user-images.githubusercontent.com/46227224/113672526-8811cb00-96d5-11eb-8527-5f8c559482fc.png",
+		"installation": "pip install tkterminal",
+		"tags": [
+			"tkterminal",
+			"terminal",
+			"console",
+			"command line",
+			"command prompt"
+		]
+	},
+	"Auto-py-to-exe": {
+		"name": "auto-py-to-exe",
+		"type": "pip",
+		"icon": "pkg",
+		"desc": "Утилита для пакетов",
+		"full_desc": "Конвертер .py в .exe с простым графическим интерфейсом на базе PyInstaller в Python.",
+		"author": "Brent Vollebregt",
+		"highlights": [
+			"Конвертируйте свой python-скрипт в exe",
+			"Простой интерфейс для PyInstaller",
+			"Создавайте exe в режиме one-file или one-directory",
+			"Настройки можно сохранять"
+		],
+		"repo_url": "https://github.com/brentvollebregt/auto-py-to-exe",
+		"image_url": "https://user-images.githubusercontent.com/89206401/188321124-654cb993-80b3-4c92-8aa4-ca366931c96e.png",
+		"installation": "pip install auto-py-to-exe",
+		"tags": [
+			"auto-py-to-exe",
+			"auto py to exe",
+			"pyinstaller",
+			"executable"
+		]
+	},
+	"TkMacosx": {
+		"name": "tkmacosx",
+		"type": "pip",
+		"icon": "tk",
+		"desc": "Библиотека модифицированных виджетов",
+		"full_desc": "Этот модуль предоставляет модифицированные виджеты Tkinter, которые исправляют многие проблемы на macOS. Например, Button из tkmacosx выглядит и ощущается как нативная кнопка Tkinter, но может менять цвет фона и текста и имеет гораздо больше функционала; также исправлены проблемы с Radiobutton. \nОбратите внимание, что эти виджеты поддерживаются и на других платформах.",
+		"author": "Saad Mairaj",
+		"highlights": [
+			"Разные стили кнопок",
+			"Виджет CircleButton",
+			"Виджет Colorscale",
+			"Виджет Marquee Label",
+			"Виджет Radiobutton",
+			"Больше возможностей"
+		],
+		"repo_url": "https://github.com/Saadmairaj/tkmacosx",
+		"image_url": "https://user-images.githubusercontent.com/46227224/114270791-e8816f00-9a2b-11eb-911c-a736253b3de5.png",
+		"installation": "pip install tkmacosx",
+		"tags": [
+			"tkmacosx",
+			"macos",
+			"tkinter",
+			"widgets",
+			"color picker",
+			"colorscale",
+			"colorpicker",
+			"label",
+			"radiobutton",
+			"circle button"
+		]
+	},
+	"Chlorophyll": {
+		"name": "chlorophyll",
+		"type": "pip",
+		"icon": "tk",
+		"desc": "Редактор кода",
+		"full_desc": "Chlorophyll предоставляет виджет CodeView для tkinter — это Text-виджет с подсветкой синтаксиса, номерами строк и возможностью работать как простой редактор кода. Написан на Python и использует pygments для подсветки и модуль TkLineNums для номеров строк.",
+		"author": "rdbende",
+		"highlights": [
+			"Виджет CodeView",
+			"Подсветка синтаксиса по языку программирования",
+			"Номера строк",
+			"Редактор кода"
+		],
+		"repo_url": "https://github.com/rdbende/chlorophyll",
+		"image_url": "https://user-images.githubusercontent.com/89206401/242209433-c9ac174c-3364-42c1-bff9-bc236b7002f3.jpg",
+		"installation": "pip install chlorophyll",
+		"tags": [
+			"tkcode",
+			"code editor",
+			"coding",
+			"editor",
+			"syntax",
+			"console",
+			"code view",
+			"text"
+		]
+	},
+	"TkLineNums": {
+		"name": "tklinenums",
+		"type": "pip",
+		"icon": "tk",
+		"desc": "Виджет нумерации строк",
+		"full_desc": "TkLineNums — простой виджет нумерации строк для tkinter GUI. Он напрямую подключается к виджету Text и даже поддерживает ttk-темы через метод set_to_ttk_style.",
+		"author": "Moosems",
+		"highlights": [
+			"Клик по номерам строк устанавливает курсор в начало строки.",
+			"Shift+клик выделяет весь текст от конца кликнутой строки курсором и устанавливает позицию вставки.",
+			"Умеет работать с elided lines (строками, которые не видны в Text-виджете).",
+			"Поддерживает ttk-темы и упрощает настройку цветов.",
+			"Поддерживает выделение кликом и перетаскиванием."
+		],
+		"repo_url": "https://github.com/Moosems/TkLineNums",
+		"image_url": "https://raw.githubusercontent.com/Moosems/TkLineNums/main/misc/TkLineNumsPhoto.png",
+		"installation": "pip install tklinenums",
+		"tags": [
+			"tklinenums",
+			"linenumbers",
+			"number",
+			"widget"
+		]
+	},
+	"CTkCodeBox": {
+		"name": "ctkcodebox",
+		"type": "manual",
+		"icon": "ctk",
+		"desc": "Виджет просмотра кода",
+		"full_desc": "Продвинутый просмотрщик кода для customtkinter с номерами строк и подсветкой кода.",
+		"author": "Akascape",
+		"highlights": [
+			"Поддержка нескольких языков",
+			"Подсветка синтаксиса",
+			"Несколько цветовых тем",
+			"Контекстное меню копировать/вставить по правому клику",
+			"Номера строк слева",
+			"Полная настраиваемость"
+		],
+		"repo_url": "https://github.com/Akascape/CTkCodeBox",
+		"image_url": "https://github.com/user-attachments/assets/a22c6142-afc8-4239-840f-76e06ef7c668",
+		"installation": "https://github.com/Akascape/CTkCodeBox",
+		"tags": [
+			"ctkcodebox",
+			"codeeditor",
+			"coding",
+			"editor",
+			"syntax",
+			"programming",
+			"codeview",
+			"textbox",
+			"codebox"
+		]
+	},
+	"TkSheet": {
+		"name": "tksheet",
+		"type": "pip",
+		"icon": "tk",
+		"desc": "Продвинутый виджет таблицы",
+		"full_desc": "tksheet — это табличный виджет tkinter на чистом Python. Он работает через canvas tkinter и перемещает линии, текст и прямоугольники только для видимой части таблицы.",
+		"author": "ragardner",
+		"highlights": [
+			"Отображение и изменение табличных данных",
+			"Работает плавно даже с миллионами строк/столбцов",
+			"Перетаскивание столбцов и строк (drag & drop)",
+			"Изменение любых цветов в таблице",
+			"Создание неограниченного числа производительных dropdown и checkbox",
+			"Редактирование ячеек напрямую"
+		],
+		"repo_url": "https://github.com/ragardner/tksheet",
+		"image_url": "https://github.com/ragardner/tksheet/assets/89206401/cf52d22b-8791-43a9-b9bf-2ece90899353",
+		"installation": "pip install tksheet",
+		"tags": [
+			"tksheet",
+			"table",
+			"table",
+			"treeview",
+			"tabular",
+			"data",
+			"sheet",
+			"excel"
+		]
+	},
+	"TkDnD2": {
+		"name": "tkinterdnd2",
+		"type": "pip",
+		"icon": "tk",
+		"desc": "Поддержка drag and drop",
+		"full_desc": "tkDnD2 — это расширение tcl/Tk, добавляющее нативную поддержку drag and drop.",
+		"author": "Philippe Gagne",
+		"highlights": [
+			"Нативная поддержка drag and drop в Tkinter для Windows, Unix и Mac OSX."
+		],
+		"repo_url": "https://github.com/pmgagne/tkinterdnd2",
+		"image_url": null,
+		"installation": "pip install tkinterdnd2",
+		"tags": [
+			"tkdnd2",
+			"tkinter",
+			"drag and drop",
+			"drop files",
+			"files",
+			"dnd2"
+		]
+	},
+	"TkSliderWidget": {
+		"name": "tksliderwidget",
+		"type": "manual",
+		"icon": "tk",
+		"desc": "Многопозиционные слайдеры",
+		"full_desc": "Реализация виджета слайдера на tkinter, поддерживается несколько бегунков.",
+		"author": "MengxLi",
+		"highlights": [
+			"Многопозиционные слайдеры",
+			"Настраиваемый слайдер"
+		],
+		"repo_url": "https://github.com/MenxLi/tkSliderWidget",
+		"image_url": "http://i.ibb.co/zRYP9Fv/Annotation-2020-02-13-172914.png",
+		"installation": "https://github.com/MenxLi/tkSliderWidget",
+		"tags": [
+			"tkslider",
+			"sliders",
+			"multi slider",
+			"scale",
+			"points"
+		]
+	},
+	"AnimatedGif": {
+		"name": "animatedgif",
+		"type": "manual",
+		"icon": "tk",
+		"desc": "GIF-виджет для Tk",
+		"full_desc": "Очень простой класс (подкласс tkinter.Label), который отображает анимированный GIF в label и запускает анимацию либо в отдельном потоке, либо через метод after() в tkinter.",
+		"author": "OJ Skjelten",
+		"highlights": [
+			"Показывать gif в окне tkinter"
+		],
+		"repo_url": "https://github.com/olesk75/AnimatedGIF",
+		"image_url": null,
+		"installation": "https://github.com/olesk75/AnimatedGIF",
+		"tags": [
+			"gifs",
+			"animation",
+			"label"
+		]
+	},
+	"CTkGif": {
+		"name": "CTkGIF",
+		"type": "manual",
+		"icon": "ctk",
+		"desc": "GIF-виджет для CustomTkinter",
+		"full_desc": "GIF-виджет для CustomTkinter",
+		"author": "IfTrueEqualsEqualsTrue",
+		"highlights": [
+			"Показывать gif в окне customtkinter"
+		],
+		"repo_url": "https://github.com/IfTrueEqualsEqualsTrue/CTkGif",
+		"image_url": null,
+		"installation": "https://github.com/IfTrueEqualsEqualsTrue/CTkGif",
+		"tags": [
+			"gifs",
+			"animation",
+			"label",
+			"ctkgif"
+		]
+	},
+	"PyGUI-Gauge": {
+		"name": "pyguigauge",
+		"type": "manual",
+		"icon": "tk",
+		"desc": "Виджет шкалы (gauge)",
+		"full_desc": "Виджет Gauge — это настраиваемое графическое представление шкалы, реализованное с помощью Tkinter в Python. Он позволяет создавать визуально привлекательные шкалы с настройками размера, диапазона, цветов и многого другого.",
+		"author": "Dongli Liu",
+		"highlights": [
+			"Настраиваемость: шкала обладает высокой гибкостью",
+			"Интерактивность: динамически обновляйте значение шкалы",
+			"Рандомизация: генерируйте случайные конфигурации",
+			"Настраивайте размер, диапазон, цвета и другие параметры"
+		],
+		"repo_url": "https://github.com/Dongli99/PY-gui-gauge",
+		"image_url": "https://github.com/Akascape/tkinter-toolkit/assets/89206401/31888cc2-14a2-467e-9d8d-980bf06a3ea8",
+		"installation": "https://github.com/Dongli99/PY-gui-gauge",
+		"tags": [
+			"pyguigauge",
+			"dial",
+			"circular",
+			"meter",
+			"gauge"
+		]
+	},
+	"TkCurve": {
+		"name": "tkcurve",
+		"type": "manual",
+		"icon": "tk",
+		"desc": "Редактор кривых",
+		"full_desc": "Простой виджет кривой линии для tkinter.",
+		"author": "Akascape",
+		"highlights": [
+			"Современный вид",
+			"Добавление точек на кривую",
+			"Кривые Безье",
+			"Контрольные точки"
+		],
+		"repo_url": "https://github.com/Akascape/TkCurve",
+		"image_url": "https://github.com/Akascape/TkCurve/assets/89206401/b4cd7314-b899-4244-b4ee-1ff25355ba7c",
+		"installation": "https://github.com/Akascape/TkCurve",
+		"tags": [
+			"tkcurve",
+			"lines",
+			"curveeditor",
+			"bezier",
+			"linear"
+		]
+	},
+	"AwesomeTkinter": {
+		"name": "awesometkinter",
+		"type": "pip",
+		"icon": "tk",
+		"desc": "Библиотека виджетов на изображениях",
+		"full_desc": "AwesomeTkinter предлагает красивые виджеты tkinter. По сути это виджеты tkinter с пользовательскими стилями и изображениями.",
+		"author": "Aboghazala",
+		"highlights": [
+			"3D Button виджет",
+			"Круговой progress bar",
+			"Сегментированный progress bar",
+			"Выбор даты",
+			"и другие виджеты..."
+		],
+		"repo_url": "https://github.com/Aboghazala/AwesomeTkinter",
+		"image_url": "https://user-images.githubusercontent.com/37757246/93717162-3c059b80-fb74-11ea-9998-00fc5ba82ca3.png",
+		"installation": "pip install awesometkinter",
+		"tags": [
+			"buttons",
+			"styes",
+			"progressbar",
+			"tooltips",
+			"circular",
+			"date picker"
+		]
+	},
+	"TkFileBrowser": {
+		"name": "tkfilebrowser",
+		"type": "pip",
+		"icon": "tk",
+		"desc": "Диалоги выбора файлов",
+		"full_desc": "tkfilebrowser — это альтернатива tkinter.filedialog, позволяющая выбирать файлы или папки. GUI написан на tkinter, но выглядит ближе к GTK и использует GTK-закладки (как в nautilus или thunar). Поддерживается создание новых каталогов и фильтрация по типу файлов.",
+		"author": "Juliette Monsel",
+		"highlights": [
+			"Альтернатива стандартному диалогу файлов tkinter",
+			"askopenfilename",
+			"askopenfilenames",
+			"askopendirname",
+			"askopendirnames",
+			"asksaveasfilename"
+		],
+		"repo_url": "https://github.com/j4321/tkFileBrowser",
+		"image_url": "https://user-images.githubusercontent.com/89206401/242241123-5796e3cf-5246-42a9-b606-99485bdfd979.png",
+		"installation": "pip install tkfilebrowser",
+		"tags": [
+			"files",
+			"file browser",
+			"file manager",
+			"save",
+			"open",
+			"dialog"
+		]
+	},
+	"CTkPDFViewer": {
+		"name": "ctkpdfviewer",
+		"type": "manual",
+		"icon": "ctk",
+		"desc": "PDF-виджет",
+		"full_desc": "Простой, но мощный виджет просмотра PDF для customtkinter! Это может быть полезно для добавления документации (в формате PDF) прямо в приложение. \nПользователи могут быстро просматривать офлайн-копию вашей документации.",
+		"author": "Akascape",
+		"highlights": [
+			"Быстрый PDF-виджет",
+			"Загрузка PDF-файлов",
+			"Настройка высоты/ширины страницы",
+			"Прокручиваемые страницы"
+		],
+		"repo_url": "https://github.com/Akascape/CTkPDFViewer",
+		"image_url": "https://user-images.githubusercontent.com/89206401/242335931-1324243e-da47-4bd8-af46-cded53cb7b51.jpg",
+		"installation": "https://github.com/Akascape/CTkPDFViewer",
+		"tags": [
+			"files",
+			"pdf viewer",
+			"pdf files",
+			"viewer",
+			"documentation",
+			"about"
+		]
+	},
+	"TkColorPicker": {
+		"name": "tkcolorpicker",
+		"type": "pip",
+		"icon": "tk",
+		"desc": "Выбор цвета",
+		"full_desc": "Этот модуль содержит класс ColorPicker, реализующий выбор цвета, и функцию askcolor, которая показывает выбор цвета и возвращает выбранный цвет в форматах RGB и HTML.",
+		"author": "Juliette Monsel",
+		"highlights": [
+			"Альтернатива стандартному выбору цвета",
+			"Классические инструменты градиента",
+			"Подробные значения цвета",
+			"Цветовые палитры"
+		],
+		"repo_url": "https://github.com/j4321/tkColorPicker",
+		"image_url": "https://user-images.githubusercontent.com/89206401/242483953-1baf0d80-e892-4745-ae26-153a0382a3bc.jpg",
+		"installation": "pip install tkcolorpicker",
+		"tags": [
+			"tkcolorpicker",
+			"tkinter",
+			"colorpicker",
+			"colors",
+			"picker",
+			"color chooser"
+		]
+	},
+	"TkFontChooser": {
+		"name": "tkfontchooser",
+		"type": "pip",
+		"icon": "tk",
+		"desc": "Диалог выбора шрифта",
+		"full_desc": "Этот модуль содержит класс FontChooser, реализующий выбор шрифта, и функцию askfont, которая показывает выбор шрифта и возвращает выбранный шрифт после закрытия окна. Шрифт возвращается в виде словаря, похожего на тот, который возвращает 'tkFont.Font.actual'.",
+		"author": "Juliette Monsel",
+		"highlights": [
+			"Диалог выбора шрифта",
+			"Все стили шрифтов",
+			"Предпросмотр шрифтов"
+		],
+		"repo_url": "https://github.com/j4321/tkFontChooser",
+		"image_url": "https://user-images.githubusercontent.com/89206401/242485025-f4a7fb17-4e4e-485f-a1f6-5d8f12ad5943.jpg",
+		"installation": "pip install tkfontchooser",
+		"tags": [
+			"tkfontchooser",
+			"fonts",
+			"words",
+			"chooser",
+			"font chooser"
+		]
+	},
+	"TkinterWeb": {
+		"name": "tkinterweb",
+		"type": "pip",
+		"icon": "tk",
+		"desc": "Виджет веб-браузера",
+		"full_desc": "TkinterWeb предоставляет биндинги к виджету Tkhtml3, который позволяет загружать HTML и CSS в приложения Tkinter. \nПоддерживаются все основные ОС, работающие на Python 2.6+ или Python 3+.",
+		"author": "Anderoo",
+		"highlights": [
+			"Показывать сайты внутри frame tkinter",
+			"Только базовый HTML-просмотр"
+		],
+		"repo_url": "https://github.com/Andereoo/TkinterWeb",
+		"image_url": "https://raw.githubusercontent.com/Andereoo/TkinterWeb/main/tkinterweb/images/tkinterweb.png",
+		"installation": "pip install tkinterweb",
+		"tags": [
+			"tkwebbrowser",
+			"website",
+			"web browser",
+			"browser",
+			"tkinterweb",
+			"webpage"
+		]
+	},
+	"TkinterMapView": {
+		"name": "tkintermapview",
+		"type": "pip",
+		"icon": "ctk",
+		"desc": "Виджет отображения карты",
+		"full_desc": "TkinterMapView — это интерактивный виджет рендера карты на тайлах для Tkinter. По умолчанию отображает OpenStreetMap, но можно сменить tile server на любой другой; также поддерживается второй tile server для оверлеев, например OpenSeaMap. Можно задавать фокус виджета по координатам или адресу и ставить маркеры или маршрут на карте.",
+		"author": "TomSchimansky",
+		"highlights": [
+			"Виджет Mapview",
+			"Установка позиции по координатам",
+			"Установка позиции по адресу",
+			"Установка позиции с маркером",
+			"Установка позиции и zoom до bounding box",
+			"Создание пути из списка позиций",
+			"Создание полигона из списка позиций",
+			"Использование других серверов карт"
+		],
+		"repo_url": "https://github.com/TomSchimansky/TkinterMapView",
+		"image_url": "https://user-images.githubusercontent.com/89206401/243061279-d6baac4e-1404-4c0c-9558-41d0d9f51ba5.png",
+		"installation": "pip install tkintermapview",
+		"tags": [
+			"tkintermapview",
+			"tkmap",
+			"ctkmap",
+			"customtkinter",
+			"mapview",
+			"maps",
+			"sattelite",
+			"directions",
+			"googlemaps"
+		]
+	},
+	"TkTimePicker": {
+		"name": "tkTimePicker",
+		"type": "pip",
+		"icon": "tk",
+		"desc": "Виджет выбора времени",
+		"full_desc": "Простой и полностью настраиваемый виджет выбора времени для tkinter. Можно использовать три типа timepicker.",
+		"author": "PaulleDemon",
+		"highlights": [
+			"Виджет выбора времени",
+			"Clock timepicker",
+			"Old-spin timepicker",
+			"Modern-spin timepicker",
+			"Разные темы"
+		],
+		"repo_url": "https://github.com/PaulleDemon/tkTimePicker",
+		"image_url": "https://raw.githubusercontent.com/PaulleDemon/tkTimePicker/master/ReadMeImages/DraculaDark.png",
+		"installation": "pip install tkTimePicker",
+		"tags": [
+			"timepicker",
+			"tktimepicker",
+			"datetime",
+			"clock",
+			"analog",
+			"digital",
+			"dial"
+		]
+	},
+	"Sun-Valley-ttk-Theme": {
+		"name": "sv-ttk",
+		"type": "pip",
+		"icon": "pkg",
+		"desc": "Современная тема для виджетов tkinter.ttk",
+		"full_desc": "Пакет sv_ttk позволяет легко придать вашему приложению Tkinter/ttk внешний вид Windows 11. Делать приложения на Tkinter, которые выглядят так красиво, раньше было невозможно.",
+		"author": "rdbende",
+		"highlights": [
+			"Внешний вид Windows 11 для Tkinter",
+			"Тёмная и светлая темы",
+			"Легко применить: просто добавьте `sv_ttk.use_dark_theme()`"
+		],
+		"repo_url": "https://github.com/rdbende/Sun-Valley-ttk-theme",
+		"image_url": "https://raw.githubusercontent.com/rdbende/Sun-Valley-ttk-examples/master/Widget%20demo/Screenshot.png",
+		"installation": "pip install sv-ttk",
+		"tags": [
+			"svttk",
+			"sv-ttk",
+			"sun valley theme",
+			"themes",
+			"sunvalleyttktheme",
+			"tkinter",
+			"ttk",
+			"windows 11"
+		]
+	},
+	"Sun Valley Theme Colorizer": {
+		"name": "sv_ttk_colorizer",
+		"type": "pip",
+		"icon": "pkg",
+		"desc": "Набор инструментов темы sv-ttk",
+		"full_desc": "Модуль Python для изменения accent-цвета и применения некоторых твиков к Sun Valley ttk theme от @rdbende. Просто и удобно.",
+		"author": "Valer100",
+		"highlights": [
+			"Изменение accent-цвета без усилий",
+			"Применение твиков и исправлений (например, поддержка тёмных titlebar)",
+			"Экспорт и импорт твиков на будущее",
+			"Live preview"
+		],
+		"repo_url": "https://github.com/Valer100/Sun-Valley-Theme-Colorizer",
+		"image_url": "https://raw.githubusercontent.com/Valer100/Sun-Valley-Theme-Colorizer/main/screenshots/image_hero_dark.png",
+		"installation": "pip install sv_ttk_colorizer",
+		"tags": [
+			"svttk",
+			"sv-ttk",
+			"sun valley theme",
+			"svttkcolorizer",
+			"sunvalleyttktheme",
+			"colorizer",
+			"windows 11",
+			"sv-ttk-c",
+			"sv_ttk_c"
+		]
+	},
+	"TkFontAwesome": {
+		"name": "tkfontawesome",
+		"type": "pip",
+		"icon": "tk",
+		"desc": "Библиотека иконок",
+		"full_desc": "Библиотека, позволяющая использовать иконки FontAwesome в приложении tkinter. \nВы можете использовать любые из 1k+ бесплатных иконок FontAwesome 5.0. Цвет заливки и размер настраиваются по вашим параметрам и затем конвертируются в объект через tksvg, который можно использовать везде, где вы бы использовали tkinter.PhotoImage.",
+		"author": "Israel Dryer",
+		"highlights": [
+			"Легко добавляйте иконки FontAwesome",
+			"website: https://fontawesome.com/versions"
+		],
+		"repo_url": "https://github.com/israel-dryer/TkFontAwesome",
+		"image_url": "https://raw.githubusercontent.com/israel-dryer/TkFontAwesome/main/assets/example-2.1.png",
+		"installation": "pip install tkfontawesome",
+		"tags": [
+			"fonts",
+			"tkfontawesome",
+			"icons",
+			"images",
+			"svg"
+		]
+	},
+	"TTkBootstrap": {
+		"name": "ttkbootstrap",
+		"type": "pip",
+		"icon": "tk",
+		"desc": "Библиотека тем/виджетов",
+		"full_desc": "Усиленное расширение тем для tkinter, которое включает современные плоские темы по запросу, вдохновлённые Bootstrap.",
+		"author": "Israel Dryer",
+		"highlights": [
+			"Встроенные темы",
+			"Предопределённые стили",
+			"Простой API на ключевых словах",
+			"Много новых виджетов",
+			"Встроенный создатель тем"
+		],
+		"repo_url": "https://github.com/israel-dryer/ttkbootstrap",
+		"image_url": "https://user-images.githubusercontent.com/89206401/246755992-a4f0206d-55e4-4d2d-983a-610a2cc94256.jpg",
+		"installation": "pip install ttkbootstrap",
+		"tags": [
+			"widgets",
+			"themes",
+			"styles",
+			"library",
+			"ttkbootstrap"
+		]
+	},
+	"Py-Window-Styles": {
+		"name": "pywinstyles",
+		"type": "pip",
+		"icon": "pkg",
+		"desc": "Темы окон Windows 11",
+		"full_desc": "Настройте окно tkinter с крутыми встроенными стилями и темами заголовка окна. \nТолько для Windows 11",
+		"author": "Akascape",
+		"highlights": [
+			"Acrylic theme (размытое окно)",
+			"Aero Theme",
+			"Пользовательские цвета заголовка",
+			"Прозрачные темы",
+			"Ретро-тема Windows 7",
+			"Тёмные темы заголовка",
+			"Ещё больше настраиваемых опций окна"
+		],
+		"repo_url": "https://github.com/Akascape/py-window-styles",
+		"image_url": "https://user-images.githubusercontent.com/89206401/246872839-986062c0-30a0-4289-929a-e5e2440b8dd1.jpg",
+		"installation": "pip install pywinstyles",
+		"tags": [
+			"themes",
+			"pywindowstyles",
+			"pywinstyles",
+			"windows11",
+			"styles",
+			"blurred",
+			"acrylic",
+			"headercolor",
+			"titlebar"
+		]
+	},
+	"hPyT": {
+		"name": "hpyt",
+		"type": "pip",
+		"icon": "pkg",
+		"desc": "Управление окнами и titlebar в Windows",
+		"full_desc": "Пакет для управления окнами и строкой заголовка GUI-приложений на Python. Поддерживает Windows 11 и 10",
+		"author": "Zingzy",
+		"highlights": [
+			"Скрыть/показать строку заголовка",
+			"Радужный titlebar",
+			"Скрыть/показать кнопки Maximize и Minimize (полностью скрывает обе)",
+			"Скрыть/показать все кнопки или элементы",
+			"Включить/выключить кнопку Maximize",
+			"Включить/выключить кнопку Minimize",
+			"Управление прозрачностью окна",
+			"Мигание окна",
+			"Пользовательский цвет titlebar",
+			"Пользовательский цвет текста titlebar",
+			"Центрировать окно на экране",
+			"Центрировать вторичное окно относительно главного",
+			"Другие базовые функции управления окнами — перемещение, изменение размера, максимизация, минимизация, восстановление",
+			"Анимации движения: круговая, вертикальная и горизонтальная",
+			"Стилизация текста заголовка"
+		],
+		"repo_url": "https://github.com/zingzy/hPyT",
+		"image_url": "https://github.com/Akascape/tkinter-toolkit/assets/89206401/0b03c50d-a1e1-4ae3-a666-427e81694464",
+		"installation": "pip install hPyT",
+		"tags": [
+			"hpyt",
+			"windows",
+			"titlebar",
+			"buttons",
+			"maximise",
+			"minimize",
+			"flash",
+			"hide"
+		]
+	},
+	"CTkListbox": {
+		"name": "ctklistbox",
+		"type": "pip",
+		"icon": "ctk",
+		"desc": "Пользовательский виджет Listbox",
+		"full_desc": "Быстрый и современный виджет listbox для customtkinter.",
+		"author": "Akascape",
+		"highlights": [
+			"Похож на стандартный listbox tkinter",
+			"Настраиваемые параметры"
+		],
+		"repo_url": "https://github.com/Akascape/CTkListbox",
+		"image_url": "https://user-images.githubusercontent.com/89206401/247524994-256c135f-3d6c-4daa-87a5-b4572a2c905f.jpg",
+		"installation": "pip install CTkListbox",
+		"tags": [
+			"customtkinter",
+			"listbox",
+			"combobox",
+			"optionmenu",
+			"menu"
+		]
+	},
+	"CTkVisualizer": {
+		"name": "ctkvisualizer",
+		"type": "pip",
+		"icon": "ctk",
+		"desc": "Аудио-визуализатор для CTk",
+		"full_desc": "CTkVisualizer — интерактивный и визуально привлекательный инструмент, который превращает аудиоданные в динамические визуальные представления. Используя библиотеки Python, такие как librosa, pygame и customtkinter, приложение обеспечивает визуализацию частот и амплитуд в реальном времени с помощью цветных анимированных полос. Пользователи могут воспроизводить аудиофайлы, ставить на паузу и регулировать громкость, наслаждаясь захватывающим отображением, которое улучшает впечатление от прослушивания. Идеально для любителей музыки, разработчиков и артистов — этот проект показывает красоту звука через визуальное искусство.",
+		"author": "Loris Dante (iLollek)",
+		"highlights": [
+			"Визуализация в реальном времени: живое отображение с анимированными \nполосами, которые мгновенно реагируют на изменения частоты и амплитуды.",
+			"Настраиваемые цветовые схемы: персонализируйте визуализатор, меняя \nцвет аудиополос под ваши предпочтения или настроение музыки.",
+			"Динамическое управление воспроизведением: легко управляйте воспроизведением методами \nplay, pause и resume, а также настройкой громкости для удобного \nпрослушивания.",
+			"Эффекты прозрачности полос: улучшайте эстетику с опциональной \nпрозрачностью, создавая уникальный и погружающий эффект."
+		],
+		"repo_url": "https://github.com/iLollek/CTkVisualizer",
+		"image_url": "https://raw.githubusercontent.com/iLollek/CTkVisualizer/refs/heads/main/image.png",
+		"installation": "pip install CTkVisualizer",
+		"tags": [
+			"audio visualizer",
+			"music visualizer",
+			"visualizer",
+			"ctkvisualizer",
+			"animation",
+			"sound"
+		]
+	},
+	"TkVisualizer": {
+		"name": "tkvisualizer",
+		"type": "manual",
+		"icon": "tk",
+		"desc": "Виджет аудио-визуализатора",
+		"full_desc": "Простой виджет аудио-визуализатора для tkinter.",
+		"author": "Akascape",
+		"highlights": [
+			"Градиентный Frame",
+			"Настраиваемые опции",
+			"Сейчас в бета-стадии..."
+		],
+		"repo_url": "https://github.com/Akascape/TkVisualizer",
+		"image_url": "https://user-images.githubusercontent.com/89206401/248234441-5f16df2c-0dce-42a6-ac1c-78664314a35a.jpg",
+		"installation": "https://github.com/Akascape/TkVisualizer",
+		"tags": [
+			"audio visualizer",
+			"music visualizer",
+			"visualizer",
+			"tkvisualizer",
+			"animation",
+			"sound"
+		]
+	},
+	"CustomTkinterTitlebar": {
+		"name": "customtkintertitlebar",
+		"type": "pip",
+		"icon": "tk",
+		"desc": "Настраиваемая строка заголовка для Windows",
+		"full_desc": "Проект, который помогает получить пользовательский titlebar. В titlebar можно добавлять разные типы виджетов.",
+		"author": "XiaoBaiYun",
+		"highlights": [
+			"Вставка компонентов в titlebar",
+			"Пользовательские кнопки minsize & maxsize",
+			"Разные темы окна: mica, fluent, blur",
+			"Виджет Tabview в titlebar"
+		],
+		"repo_url": "https://github.com/littlewhitecloud/CustomTkinterTitlebar/",
+		"image_url": "https://user-images.githubusercontent.com/71159641/244681503-30f7c785-d189-4865-8095-384259e9b419.png",
+		"installation": "pip install CustomTkinterTitlebar",
+		"tags": [
+			"CTkTitlebar",
+			"customtkinter titlebar",
+			"titlebar",
+			"header",
+			"custom titlebar"
+		]
+	},
+	"CTkXYFrame": {
+		"name": "ctkxyframe",
+		"type": "manual",
+		"icon": "ctk",
+		"desc": "Улучшенный прокручиваемый frame",
+		"full_desc": "Улучшенный прокручиваемый frame для customtkinter с прокруткой по x и y.",
+		"author": "Akascape",
+		"highlights": [
+			"Прокрутка по x и y одновременно",
+			"Правильные биндинги колесика мыши",
+			"Динамические полосы прокрутки, автоматически скрываются при достижении полного размера",
+			"Полная настраиваемость как у ctkscrollable frame"
+		],
+		"repo_url": "https://github.com/Akascape/CTkXYFrame",
+		"image_url": "https://github-production-user-asset-6210df.s3.amazonaws.com/89206401/250564194-05298e8d-cc9d-48ca-8b27-9943176d5c1a.jpg",
+		"installation": "https://github.com/Akascape/CTkXYFrame",
+		"tags": [
+			"customtkinter",
+			"ctkxyframe",
+			"ctkscrollableframe",
+			"scrollableframe",
+			"frame"
+		]
+	},
+	"Tkinter Quick Layout": {
+		"name": "Tkinter_Quick_Layout",
+		"type": "manual",
+		"icon": "pkg",
+		"desc": "Создавайте сложные grid-раскладки для примера",
+		"full_desc": "Этот репозиторий поможет создавать сложные раскладки при разработке приложений Tkinter и CustomTkinter",
+		"author": "EasyDevv",
+		"highlights": [
+			"Легко брать примеры при создании любой новой раскладки",
+			"Метод: Grid",
+			"Разные элементы управления и опции",
+			"Копировать данные в буфер обмена"
+		],
+		"repo_url": "https://github.com/EasyDevv/Tkinter_Quick_Layout",
+		"image_url": "https://user-images.githubusercontent.com/11148818/276195554-35887086-a3fd-48c6-807f-6a41049fafb8.png",
+		"installation": "https://github.com/EasyDevv/Tkinter_Quick_Layout",
+		"tags": [
+			"customtkinter",
+			"tkinter",
+			"frame",
+			"layout maker",
+			"tkinter quick layout",
+			"quicklayout",
+			"design",
+			"tools",
+			"gui",
+			"app"
+		]
+	},
+	"CTkMeter": {
+		"name": "CTkMeter",
+		"type": "manual",
+		"icon": "ctk",
+		"desc": "Круговой progress bar",
+		"full_desc": "Классный современный виджет meter с анимацией при наведении для CustomTkinter.",
+		"author": "Anand Krishnan",
+		"highlights": [
+			"Легко добавить круговой progress bar",
+			"Установка процента загрузки",
+			"Эффект hover",
+			"Настройка анимации"
+		],
+		"repo_url": "https://github.com/anamite/ctk_widget",
+		"image_url": "https://github.com/anamite/ctk_widget/assets/77412636/d53b3537-45a5-4b05-8d21-a70e61a09b45",
+		"installation": "https://github.com/anamite/ctk_widget",
+		"tags": [
+			"ctkmeter",
+			"meter",
+			"dial",
+			"gauge",
+			"circular progressbar",
+			"progressbar",
+			"loading"
+		]
+	},
+	"CTkClock": {
+		"name": "ctkclock",
+		"type": "manual",
+		"icon": "ctk",
+		"desc": "Виджет часов",
+		"full_desc": "Библиотека виджета часов для Tkinter и CTkinter.",
+		"author": "Arthur-101",
+		"highlights": [
+			"Компонент часов в CTk",
+			"Полностью настраиваемый"
+		],
+		"repo_url": "https://github.com/Arthur-101/CTkClock",
+		"image_url": "https://raw.githubusercontent.com/Arthur-101/CTkClock/main/Images/example%20clock3.png",
+		"installation": "https://github.com/Arthur-101/CTkClock",
+		"tags": [
+			"customtkinter",
+			"ctkclock",
+			"clock",
+			"analogclock",
+			"time",
+			"watch"
+		]
+	},
+	"Popup Menu": {
+		"name": "popup menu",
+		"type": "manual",
+		"icon": "ctk",
+		"desc": "Меню по правому клику",
+		"full_desc": "Класс пользовательского контекстного меню по правому клику для customtkinter.",
+		"author": "Akascape",
+		"highlights": [
+			"Меню по правому клику",
+			"Скрывается при клике вне меню",
+			"Скруглённые углы",
+			"Настраиваемые опции",
+			"Установка не требуется"
+		],
+		"repo_url": "https://www.akascape.com/coding/how-to-make-a-popup-menu-in-customtkinter",
+		"image_url": "https://github.com/TomSchimansky/CustomTkinter/assets/89206401/b66e6683-7caf-46cc-8a3e-2fed9c584c9a",
+		"installation": "https://www.akascape.com/coding/how-to-make-a-popup-menu-in-customtkinter",
+		"tags": [
+			"popupmenu",
+			"floatingwindow",
+			"rightclick",
+			"menu",
+			"options",
+			"roundedcorners"
+		]
+	},
+	"Full Custom Window": {
+		"name": "customwindow",
+		"type": "manual",
+		"icon": "ctk",
+		"desc": "Пользовательский стиль окна",
+		"full_desc": "Класс пользовательского окна с новым стилем заголовка для Windows 10/11 со скруглёнными углами",
+		"author": "Akascape",
+		"highlights": [
+			"Точное перетаскивание окна",
+			"Настройка titlebar",
+			"Изменяемый размер окна",
+			"Иконка окна",
+			"Скруглённые углы"
+		],
+		"repo_url": "https://www.akascape.com/coding/full-python-window-template-with-new-header",
+		"image_url": "https://user-images.githubusercontent.com/89206401/205429162-b89b06d9-5db5-4844-b8ee-903a193e9463.jpg",
+		"installation": "https://www.akascape.com/coding/full-python-window-template-with-new-header",
+		"tags": [
+			"window",
+			"macos",
+			"style",
+			"customwindow"
+		]
+	},
+	"Tk-to-CTk": {
+		"name": "tkinter-to-customtkinter",
+		"type": "manual",
+		"icon": "ctk",
+		"desc": "Инструмент конвертации",
+		"full_desc": "Конвертируйте ваши tkinter-скрипты и GUI в customtkinter с помощью этой CLI-утилиты. Есть вариант с графическим интерфейсом; инструмент может определять парадигму программирования и структуру импортов, чтобы сохранять согласованность между файлами",
+		"author": "Donny",
+		"highlights": [
+			"Конвертировать tkinter-приложение в CTk"
+		],
+		"repo_url": "https://github.com/Donny-GUI/tkinter-to-customtkinter-converter",
+		"image_url": "https://user-images.githubusercontent.com/108424001/226063288-66da2f57-f5b7-49f1-bdd5-f465e963b125.png",
+		"installation": "https://github.com/Donny-GUI/tkinter-to-customtkinter-converter",
+		"tags": [
+			"tkintertocustomtkinter",
+			"tktoctk",
+			"convertor",
+			"tools"
+		]
+	},
+	"CTkComponents": {
+		"name": "CTkComponents",
+		"type": "manual",
+		"icon": "ctk",
+		"desc": "Полезные элементы UI",
+		"full_desc": "CTk Components — это коллекция виджетов и утилит, разработанных как расширения или дополнения для customtkinter",
+		"author": "rudymohammadbali",
+		"highlights": [
+			"CTkAlert",
+			"CTkBanner",
+			"CTkNotification",
+			"CTkLoader",
+			"CTkPopup",
+			"CTkProgressPopup",
+			"CTkTreeVew",
+			"Ещё..."
+		],
+		"repo_url": "https://github.com/rudymohammadbali/ctk_components",
+		"image_url": "",
+		"installation": "https://github.com/rudymohammadbali/ctk_components/",
+		"tags": [
+			"customtkinter",
+			"ctkcomponents",
+			"popupmenu",
+			"banner",
+			"notification",
+			"loader",
+			"gif",
+			"progress",
+			"treeview",
+			"messagebox"
+		]
+	},
+	"CTkChart": {
+		"name": "ctkchart",
+		"type": "pip",
+		"icon": "ctk",
+		"desc": "Виджет графиков для CTk",
+		"full_desc": "Создавайте графики в окнах customtkinter!",
+		"author": "Thisal-D",
+		"highlights": [
+			"Легко строить графики",
+			"Настройка данных графика",
+			"Анимированный график",
+			"Полностью настраиваемый",
+			"Лёгкая библиотека"
+		],
+		"repo_url": "https://github.com/Thisal-D/ctkchart",
+		"image_url": "https://github.com/Thisal-D/ctkchart/assets/93121062/ecb91596-2c50-46ef-923f-c3db0d6091d1",
+		"installation": "pip install ctkchart",
+		"tags": [
+			"tkchart",
+			"ctkchart",
+			"chart",
+			"graph",
+			"plot",
+			"line chart"
+		]
+	},
+	"Tkhtmlview": {
+		"name": "tkhtmlview",
+		"type": "pip",
+		"icon": "tk",
+		"desc": "HTML-виджеты для tkinter",
+		"full_desc": "Отображайте базовый HTML в UI",
+		"author": "bauripalash / paolo-gurisatti",
+		"highlights": [
+			"Простой и лёгкий",
+			"Текст можно отображать как HTML",
+			"Поддержка изображений"
+		],
+		"repo_url": "https://github.com/paolo-gurisatti/tk_html_widgets",
+		"image_url": "https://github.com/Thisal-D/Youtube-Downloader/assets/93121062/b38ada9b-87ac-438a-9b12-a3aebb098f32",
+		"installation": "pip install tkhtmlview",
+		"tags": [
+			"html",
+			"tkhtmlview",
+			"tk_html_widgets"
+		]
+	},
+	"ShadowTk": {
+		"name": "ShadowTk",
+		"type": "manual",
+		"icon": "tk",
+		"desc": "Тени для виджетов",
+		"full_desc": "Добавляйте тени к компонентам Tkinter",
+		"author": "vednig",
+		"highlights": [
+			"Простые тени вокруг виджетов tkinter"
+		],
+		"repo_url": "https://github.com/vednig/shadowTk",
+		"image_url": "https://i.stack.imgur.com/fJot2.png",
+		"installation": "https://github.com/vednig/shadowTk",
+		"tags": [
+			"shadowtk",
+			"shadows",
+			"background"
+		]
+	},
+	"Libtextworker": {
+		"name": "libtextworker",
+		"type": "pip",
+		"icon": "tk",
+		"desc": "Утилитарный проект",
+		"full_desc": "Эта библиотека предназначена для программ как с GUI, так и с CLI/TUI.",
+		"author": "Le Bao Nguyen",
+		"highlights": [
+			"Виджет редактора текста Tkinter с номерами строк",
+			"Пользовательский диалог about",
+			"Дерево директорий + список (в разработке) с автообновлением",
+			"Система конфигурации JSON+INI и класс для чего угодно",
+			"Автораскраска, использует darkdetect"
+		],
+		"repo_url": "https://github.com/lebao3105/libtextworker",
+		"image_url": "https://github.com/Akascape/tkinter-toolkit/assets/77564176/dd31b1f6-9f97-44f9-af0f-94a09d853cae",
+		"installation": "pip install libtextworker",
+		"tags": [
+			"libtextworker",
+			"dialog box",
+			"directory",
+			"tree",
+			"json",
+			"auto-color",
+			"config"
+		]
+	},
+	"RoundedTk": {
+		"name": "RoundedTk",
+		"type": "manual",
+		"icon": "tk",
+		"desc": "Скруглённые окна",
+		"full_desc": "Rounded Tk — библиотека Python, позволяющая легко создавать скруглённые окна и виджеты с Tkinter.",
+		"author": "AZachia",
+		"highlights": [
+			"Применение прозрачных скруглённых углов в окне tkinter",
+			"https://github.com/AZachia/Rounded-Tk"
+		],
+		"repo_url": "https://github.com/AZachia/Rounded-Tk",
+		"image_url": "https://raw.githubusercontent.com/AZachia/Rounded-Tk/main/images/RoundedTk.png",
+		"installation": "https://github.com/AZachia/Rounded-Tk",
+		"tags": [
+			"roundedtk",
+			"transparent"
+		]
+	},
+	"CTkSlideView": {
+		"name": "CTkSlideView",
+		"type": "manual",
+		"icon": "ctk",
+		"desc": "Слайд-шоу карусель",
+		"full_desc": "Slide View (карусель слайдов) для customtkinter. Также включает плавную анимацию перехода между слайдами.",
+		"author": "rigvedmaanas",
+		"highlights": [
+			"Добавляйте виджеты на слайд",
+			"Плавная анимация между слайдами"
+		],
+		"repo_url": "https://github.com/rigvedmaanas/CTkSlideView",
+		"image_url": "https://github.com/rigvedmaanas/CTkSlideView/assets/89206401/ff58a72e-dc6c-4193-ba1a-8f78773405c8",
+		"installation": "https://github.com/rigvedmaanas/CTkSlideView",
+		"tags": [
+			"slideshow",
+			"slides",
+			"ctkslideview",
+			"animation"
+		]
+	},
+	"CTkCalendar": {
+		"name": "CTkCalendar",
+		"type": "manual",
+		"icon": "ctk",
+		"desc": "Виджет календаря для CTk",
+		"full_desc": "CTkCalendar — современный и настраиваемый виджет календаря, созданный на базе tkinter и customtkinter. Он предоставляет стильный и удобный интерфейс для работы с календарными данными и идеально подходит для добавления календарной функциональности в ваши Python-приложения.",
+		"author": "Mustafa Hilmi YAVUZHAN",
+		"highlights": [
+			"Эстетичный дизайн с настраиваемыми цветами и темами.",
+			"Навигация по месяцам: легко переключайтесь между месяцами кнопками назад/вперёд.",
+			"Подсветка текущего дня: выделяйте текущий день настраиваемыми цветами.",
+			"Пользовательский callback: выполняйте функцию при клике по дню.",
+			"Гибкие опции отображения: скрывайте или показывайте элементы окна по предпочтению."
+		],
+		"repo_url": "https://github.com/MustafaHilmiYAVUZHAN/CTkCalender",
+		"image_url": "https://github.com/MustafaHilmiYAVUZHAN/CTkCalender/blob/main/screenshots/All.png?raw=true",
+		"installation": "https://github.com/MustafaHilmiYAVUZHAN/CTkCalender",
+		"tags": [
+			"ctkcalendar",
+			"calendar",
+			"calender",
+			"month",
+			"day",
+			"year"
+		]
+	},
+	"winaccent": {
+		"name": "winaccent",
+		"type": "pip",
+		"icon": "pkg",
+		"desc": "Утилита Windows accent-цвета",
+		"full_desc": "Простой и лёгкий модуль Python для получения accent-цвета Windows или его оттенка. Работает на Windows 10 и 11 и не требует дополнительных зависимостей.",
+		"author": "Valer100",
+		"highlights": [
+			"Получить accent-цвет для светлого/тёмного/обычного режима или его оттенок",
+			"Получить callback при изменении accent-цвета",
+			"Лёгкий и простой в использовании",
+			"Без дополнительных зависимостей"
+		],
+		"repo_url": "https://github.com/Valer100/winaccent",
+		"image_url": "https://github.com/Valer100/winaccent/blob/main/assets/hero.png?raw=true",
+		"installation": "pip install winaccent",
+		"tags": [
+			"winaccent",
+			"color",
+			"accent",
+			"windows"
+		]
+	},
+	"CTkToggle": {
+		"name": "ctktoggle",
+		"type": "pip",
+		"icon": "ctk",
+		"desc": "Виджет кнопки-переключателя (toggle)",
+		"full_desc": "Лёгкий и простой в использовании Python-пакет, созданный для упрощения создания и управления toggle-кнопками и группами переключателей в CustomTkinter. Легко интегрируйте визуально привлекательные toggle-кнопки в ваши GUI-приложения на CustomTkinter. Пакет поддерживает динамическое поведение групп, настраиваемые цвета и надёжное управление состояниями — идеально для современных интерактивных интерфейсов.",
+		"author": "Tchicdje Kouojip Joram Smith",
+		"highlights": [
+			"Создавайте toggle-кнопки с настраиваемыми состояниями.",
+			"Группируйте кнопки для согласованного переключения.",
+			"Легко управляйте состояниями toggle программно.",
+			"Свободно участвуйте в разработке более чистых UI.",
+			"Повышайте универсальность, заменяя CTkSwitch на CTkToggleButton."
+		],
+		"repo_url": "https://github.com/DeltaGa/ctk_toggle",
+		"image_url": "https://raw.githubusercontent.com/DeltaGa/ctk_toggle/refs/heads/main/assets/thumbnail.jpg",
+		"installation": "pip install ctk_toggle",
+		"tags": [
+			"ctktoggle",
+			"ctk_toggle",
+			"togglebutton",
+			"button"
+		]
+	},
+	"Maliang": {
+		"name": "maliang",
+		"type": "pip",
+		"icon": "tk",
+		"desc": "Лёгкий UI-фреймворк, нарисованный в Tk Canvas!",
+		"full_desc": "Maliang — лёгкий UI-фреймворк на базе tkinter, где весь UI рисуется в Canvas! Maliang поддерживает современные интерактивные интерфейсы, адаптивные системные темы, построение графиков и анимации matplotlib, воспроизведение видео со звуком, рисование простых 3D-объектов и создание пользовательских виджетов.",
+		"author": "Xiaokang2022",
+		"highlights": [
+			"Виджеты полностью рисуются на canvas!",
+			"Очень современный UI!",
+			"Частичная совместимость с tkinter!",
+			"Очень легко изучить!",
+			"Адаптивная системная тема!",
+			"Поддержка графиков и анимации matplotlib!",
+			"Поддержка воспроизведения видео со звуком!",
+			"Поддержка рисования простых 3D-объектов!",
+			"Легко создавайте нужные вам виджеты!"
+		],
+		"repo_url": "https://github.com/Xiaokang2022/maliang",
+		"image_url": "https://github.com/Xiaokang2022/maliang-demos/blob/main/preview/demo1-1.png?raw=true",
+		"installation": "pip install maliang",
+		"tags": [
+			"maliang",
+			"canvas",
+			"tkinter",
+			"ui framework",
+			"widgets",
+			"tkintertools"
+		]
+	},
+	"CTkExtendedGraph": {
+		"name": "CTkExtendedGraph",
+		"type": "pip",
+		"icon": "ctk",
+		"desc": "Настраиваемый и динамический виджет для составных столбчатых диаграмм!",
+		"full_desc": "CTkExtendedGraph — настраиваемый и динамический виджет на базе matplotlib для отображения составных (stacked) столбчатых диаграмм в приложениях Tkinter. Поддерживает масштабируемые GUI, позволяет динамически обновлять данные и гибко настраивается по цветам, категориям, единицам и заголовку.",
+		"author": "Loris Dante (iLollek)",
+		"highlights": [
+			"Масштабируемость: автоматически подстраивает размеры под доступное пространство.",
+			"Настраиваемость: настраивайте заголовок, категории, цвета и единицы.",
+			"Динамические обновления: легко добавляйте новые записи данных.",
+			"Лёгкая установка: через pip."
+		],
+		"repo_url": "https://github.com/iLollek/CTkExtendedGraph",
+		"image_url": "https://raw.githubusercontent.com/iLollek/CTkExtendedGraph/refs/heads/main/demo_picture.png",
+		"installation": "pip install CTkExtendedGraph",
+		"tags": [
+			"customtkinter",
+			"widget",
+			"matplotlib",
+			"data visualization",
+			"bar chart",
+			"chart",
+			"graph",
+			"ctkextendedgraph"
+		]
+	},
+	"CTkFIleDialog": {
+		"name": "CTkFIleDialog",
+		"type": "manual",
+		"icon": "ctk",
+		"desc": "Настраиваемый и динамический виджет для составных столбчатых диаграмм!",
+		"full_desc": "Альтернатива стандартному tkinter.filedialog, написанная на CustomTkinter, чтобы соответствовать стилю приложений CustomTkinter.",
+		"author": "limafresh",
+		"highlights": [
+			"Лучший File Dialog для customtkinter",
+			"Вы можете настроить ширину, высоту, заголовок и стартовую папку. Просмотр папок быстрый и без лагов.",
+			"Виджет выбора файлов",
+			"Кроссплатформенный"
+		],
+		"repo_url": "https://github.com/limafresh/CTkFileDialog",
+		"image_url": "https://raw.githubusercontent.com/limafresh/CTkFileDialog/main/screenshot3.png",
+		"installation": "https://github.com/limafresh/CTkFileDialog",
+		"tags": [
+			"ctkfiledialog",
+			"customtkinter",
+			"tkfiledialog",
+			"filedialog",
+			"fileexplorer",
+			"finder",
+			"fileopener",
+			"filepicker",
+			"ctkfilepicker"
+		]
+	},
+	"CTkSeparator": {
+		"name": "ctkseparator",
+		"type": "pip",
+		"icon": "ctk",
+		"desc": "Настраиваемый разделитель",
+		"full_desc": "CTkSeparator — виджет для CustomTkinter, который предоставляет настраиваемую разделительную линию. Поддерживает пунктир, градиентные цвета и регулируемую толщину. Это полезно для визуального разделения секций UI современным эстетичным образом.",
+		"author": "AJ-cubes",
+		"highlights": [
+			"Настраиваемая разделительная линия",
+			"Поддержка пунктирных стилей",
+			"Градиентные цвета для оформления",
+			"Регулируемая толщина"
+		],
+		"repo_url": "https://github.com/AJ-cubes/CTkSeparator",
+		"image_url": "https://raw.githubusercontent.com/AJ-cubes/CTkSeparator/refs/heads/main/examples/CTkSeparator%20Example.png",
+		"installation": "pip install CTkSeparator",
+		"tags": [
+			"ctkseparator",
+			"customtkinter",
+			"ctk",
+			"separator",
+			"line",
+			"gap",
+			"border"
+		]
+	}
+}

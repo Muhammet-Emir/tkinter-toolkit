@@ -39,9 +39,6 @@ class App(customtkinter.CTk):
         active_language = self.lang_database["language_list"].get(main_selected_lang)
         self.load_the_database()
         self.load_lang_texts()
-        print(active_language), print(main_selected_lang)
-        
-        
 
         def texts_for_language():
             # Language text part
@@ -296,8 +293,6 @@ class App(customtkinter.CTk):
 
         self.lang_button.configure(state="disabled")
 
-
-
     def get_image(self, name):
         """ download the image preview """
         try:
@@ -436,12 +431,11 @@ class App(customtkinter.CTk):
 
         entry_pip.bind('<Double-1>', on_entry_click)
     
-
     def read_database(self):
         """ read the database containing package data """
         database = os.path.join(App.DIRPATH, "assets", "database_lang", active_language, "database.json")
         if os.path.exists(database):
-            with open(database) as f:
+            with open(database , "r", encoding="utf-8") as f:
                 self.data = json.load(f)
         for i in self.data.keys():
             self.add_item(name=i, icon=self.data[i]["icon"])

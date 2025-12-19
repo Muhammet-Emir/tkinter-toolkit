@@ -1,7 +1,11 @@
 {
-    "selected_language": "Türkçe",
+    "selected_language": "English",
     "language_list": {
+        "Deutsch": "de_DE",
         "English": "en_US",
-        "Türkçe": "tr_TR"
+        "Español": "es_ES",
+        "Français": "fr_FR",
+        "Türkçe": "tr_TR",
+        "Русский": "ru_RU"
     }
 }
