@@ -7,6 +7,7 @@
 
 <div>
 <i>Read this in other languages:</i>
+  
 <kbd>[<img title="Germany" alt="Germany" src="https://cdn.statically.io/gh/hjnilsson/country-flags/master/svg/de.svg" width="22">](./README.de_DE.md)</kbd>
 <kbd><img title="English" alt="English" src="https://cdn.statically.io/gh/hjnilsson/country-flags/master/svg/us.svg" width="22"></kbd>
 <kbd>[<img title="Spanish" alt="Spanish" src="https://cdn.statically.io/gh/hjnilsson/country-flags/master/svg/es.svg" width="22">](./README.es_ES.md)</kbd>
