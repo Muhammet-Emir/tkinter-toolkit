@@ -8,12 +8,12 @@
 <div>
 <i>Read this in other languages:</i>
   
-<kbd>[<img title="Germany" alt="Germany" src="https://cdn.statically.io/gh/hjnilsson/country-flags/master/svg/de.svg" width="22">](./README.de_DE.md)</kbd>
+<kbd>[<img title="Germany" alt="Germany" src="https://cdn.statically.io/gh/hjnilsson/country-flags/master/svg/de.svg" width="22">](docs/translations/README.de_DE.md)</kbd>
 <kbd><img title="English" alt="English" src="https://cdn.statically.io/gh/hjnilsson/country-flags/master/svg/us.svg" width="22"></kbd>
-<kbd>[<img title="Spanish" alt="Spanish" src="https://cdn.statically.io/gh/hjnilsson/country-flags/master/svg/es.svg" width="22">](./README.es_ES.md)</kbd>
-<kbd>[<img title="French" alt="French" src="https://cdn.statically.io/gh/hjnilsson/country-flags/master/svg/fr.svg" width="22">](./README.fr_FR.md)</kbd>
+<kbd>[<img title="Spanish" alt="Spanish" src="https://cdn.statically.io/gh/hjnilsson/country-flags/master/svg/es.svg" width="22">](docs/translations/README.es_ES.md)</kbd>
+<kbd>[<img title="French" alt="French" src="https://cdn.statically.io/gh/hjnilsson/country-flags/master/svg/fr.svg" width="22">](docs/translations/README.fr_FR.md)</kbd>
 <kbd>[<img title="Turkish" alt="Turkish" src="https://cdn.statically.io/gh/hjnilsson/country-flags/master/svg/tr.svg" width="22">](docs/translations/README.tr_TR.md)</kbd>
-<kbd>[<img title="Russian" alt="Russian" src="https://cdn.statically.io/gh/hjnilsson/country-flags/master/svg/ru.svg" width="22">](./README.ru_RU.md)</kbd>
+<kbd>[<img title="Russian" alt="Russian" src="https://cdn.statically.io/gh/hjnilsson/country-flags/master/svg/ru.svg" width="22">](docs/translations/README.ru_RU.md)</kbd>
 
 <br>
 </div>
