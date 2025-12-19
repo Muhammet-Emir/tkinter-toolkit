@@ -54,4 +54,5 @@ _Teile alle neuen tkinter-basierten Widget-Bibliotheken, die du gefunden oder er
 [<img src="https://img.shields.io/badge/ADD-NEW_LIBRARY-informational?&color=black&style=for-the-badge" width="200">](https://github.com/Akascape/tkinter-toolkit/discussions/new?category=add-this)
 [<img src="https://img.shields.io/badge/Made_With-Tkinter-informational?&color=df0001&style=for-the-badge" width="200">](https://docs.python.org/3/library/tkinter.html)
 [<img src="https://img.shields.io/badge/APP_LICENSE-MIT-informational?&color=green&style=for-the-badge" width="180">](https://github.com/Akascape/tkinter-toolkit/blob/main/LICENSE)
+<br>
 <i>Die Übersetzung ist möglicherweise nicht zu 100 % korrekt. Bitte melden Sie etwaige Fehler.</i>
